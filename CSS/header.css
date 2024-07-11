@@ -93,10 +93,6 @@ header .hamburguer, header .overlay
 
 @media(max-width: 760px) {
 
-    h3{
-        font-size: 25px !important;
-    }
-
     .header .title {
         flex: 1;
     }
