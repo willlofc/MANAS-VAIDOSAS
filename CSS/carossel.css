@@ -81,7 +81,7 @@ section.slider{
 @media screen and (max-width: 760px) {
 
     .manual-btn, .nav-auto div{
-        padding: 3px;
+        padding: 3px !important;
     }
 
     .img-desktop{
