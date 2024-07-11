@@ -94,7 +94,8 @@ header .hamburguer, header .overlay
 @media(max-width: 760px) {
 
     .title h3{
-        font-size: 21px !important;
+        margin: 0;
+        font-size: 22px;
     }
 
     .header .title {
