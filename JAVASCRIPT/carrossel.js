@@ -1,14 +1,18 @@
-const box = document.querySelector('.container');
-const imagens = document.querySelectorAll('.container img')
-let contador = 0;
+var radio = document.querySelector('.manual-btn')
+var cont = 1
 
-function slider(){
-    contador++;
-    if(contador > imagens.length - 8){
-        contador = 0;
+document.getElementById('radio1').checked = true
+
+setInterval(() => (
+    proximaImg()
+), 5000)
+
+function  proximaImg(){
+    cont++
+
+    if(cont > 4){
+        cont = 1
     }
 
-    box.style.transform = `translateX(${-contador * 100}%)`
+    document.getElementById('radio'+cont).checked = true
 }
-
-setInterval(slider, 3000);

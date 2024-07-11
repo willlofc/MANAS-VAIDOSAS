@@ -1,58 +1,60 @@
-header{
-    height: var(--header-height);
-    transition: all 400ms ease;
+/* Estilos do header */
+.header {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    z-index: 12;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cabeçalho {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px; /* Reduzi o espaçamento interno do cabeçalho */
-    position: fixed;
-    background-color: white;
+    padding: 0 20px;
+    max-width: 1220px;
+    margin: 0 auto;
     width: 100%;
-    z-index: 12;
 }
 
-.Titulo {
+.title {
     display: flex;
-    color: #bb6363;
-    font-family: 'Brownsugar';
-    align-items: center; /* Alinha verticalmente os itens */
+    align-items: center;
+    color: #E0A2A2;
+    font-family: 'Brownsugar-02';
 }
 
-.Titulo h3 {
-    margin: 0; /* Removi a margem anterior para o h3 */
+.title h3 {
+    margin: 0;
     font-size: 34px;
 }
 
-.Titulo img {
+.title img {
     max-width: 120px;
     height: auto;
     margin-right: 10px;
 }
 
-ul{
-    font-family: "Montserrat";
-}
-
 #nav {
-    margin-left: auto;
-    
+    display: flex;
+    align-items: center;
 }
 
-#menu {
+.menu {
+    font-family: "Montserrat-02";
     list-style: none;
     padding: 0;
     display: flex;
+    margin: 0;
 }
 
-#menu li {
-    margin-right: 15px; /* Reduzi o espaçamento entre os itens do menu */
+.menu li {
+    margin-right: 15px;
 }
 
-#menu li a {
-    color: #bb6363;
+.menu li a {
+    color: #E0A2A2;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -61,7 +63,7 @@ ul{
     display: inline-block;
 }
 
-#menu li a:after {
+.menu li a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -69,15 +71,94 @@ ul{
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #F57C64;
+    background: #E0A2A2;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 
-#menu li a:hover:after {
+.menu li a:hover:after {
     width: 100%;
     left: 0;
 }
 
+header .hamburguer, header .overlay
+{
+    display: none;
+}
 
+.closeButton
+{
+    z-index: 15;
+}
 
+@media(max-width: 760px) {
+    .header .title {
+        flex: 1;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .hamburguer {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .header .bar1, .header .bar2, .header .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #E0A2A2;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .header .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .header .overlay.active {
+        display: block;
+    }
+
+    .header .closeButton {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .header .closeButton .bar1 {
+        transform: translate(0, 5px) rotate(-44deg);
+    }
+
+    .header .closeButton .bar3 {
+        transform: translate(0, -5px) rotate(45deg);
+    }
+
+    .header .overlayButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .header .overlayButtons a {
+        font-family: "Montserrat-02";
+        color: #E0A2A2;
+        font-size: 24px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+}

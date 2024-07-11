@@ -1,4 +1,5 @@
 @import url('header.css');
+@import url('carossel.css');
 
 @font-face {
     font-family: "BrownSugar-01";
@@ -26,56 +27,6 @@
 @font-face {
     font-family: "Quentin";
     src: url(../CONTEUDO/FONTES/Quentin.otf);
-}
-
-/*---------- VARIÁVEIS CSS ----------*/
-:root{
-    --header-height: 6.25rem;
-
-    /*---------- CORES ----------*/
-    --whithe: #fff;
-    --black: #0000;
-    --light-pink: #ffD7D7;
-    --medium-pink: #F3B6B6;
-    --pink: #E0A2A2;
-    --dark-pink: #C38888;
-    --gray-50: #E1F5FE;
-    --gray-100: #B3E5FC;
-    --gray-200: #81D4FA;
-    --gray-300: #4FC3F7;
-    --gray-400: #29B6F6;
-    --gray-500: #03A9F4;
-    --gray-600: #039BE5;
-
-    /*---------- FONTE E TIPO GRÁFIA ----------*/
-    --font-cursive: 'Quentin', cursive;
-    --font-text: 'Montserrat-01', 'Montserrat-02';
-    --font-title: 'BrownSugar-01', 'BrownSugar-02';
-    --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.813rem;
-
-    /*---------- FONT WEIGHT ----------*/
-    --font-light:300;
-    --font-medium:400;
-    --font-semi-bold:700;
-    --font-bold:800;
-
-    /*---------- MARGINS ---------*/
-    --mb-05: 0.5rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
-
-    /*--------- Z INDEXS ----------*/
-    --Z-fixed: 100;
-    --z-tooltip: 10;
-    --z_negative: -1;
 }
 
     /*---------- BASE ----------*/

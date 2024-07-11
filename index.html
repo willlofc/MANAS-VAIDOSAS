@@ -10,63 +10,89 @@
     <title>Manas Vaidosas</title>
 </head>
 <body>
-        <header class="cabeçalho">
-            <div class="container">
-            <div class="Titulo">
-                <img src="./CONTEUDO/MANAS/ICONE-LOGO ROSA-SEM FUNDO.png" onclick="restrito()">
+    <header class="header">
+        <div class="container">
+            <div class="title">
+                <img src="./CONTEUDO/MANAS/ICONE-LOGO ROSA-SEM FUNDO.png" width="80px" height="80px">
                 <h3>ESPAÇO DAS MANAS</h3>
             </div>
             <nav id="nav">
-                <ul id="menu">
-                    <li><a href="../Páginas/HTML/SobreNos.html">Sobre Nós</a></li>
-                    <li><a href="../Páginas/HTML/produtos.html">Serviços</a></li>
-                    <li><a href="index.html">Home</a></li>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Lar</a></li>
+                    <li><a href="#">Serviços</a></li>
                 </ul>
             </nav>
-            <button id="btn-mobile">Menu
-                <span id="hamburguer"></span>
-            </button>
+            <!-- BOTÃO HAMBURGUER PARA O MOBILE -->
+            <div class="hamburguer" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-        </header>
-    <!--
-    <section class="carroselOut">
-            <div class="carrosselIn">
-                <div class="container">
-                    <img src="./CONTEUDO/CARROSSEL/salao-01.jpg">
-                    <img src="./CONTEUDO/CARROSSEL/salao-03.jpg">
-                    <img src="./CONTEUDO/CARROSSEL/salao-04.jpg">
-                    <img src="./CONTEUDO/CARROSSEL/salao-05.jpg">
+            <!-- Botões do menu hamburguer -->
+            <div class="overlay" id="overlay">
+                <div class="closeButton" id="hamburguer" onclick="fechar()">
+                    <div class="bar1" id="bar1"></div>
+                    <div class="bar3" id="bar3"></div>
                 </div>
-            </div>
-    </section>
-
-    <section class="informações">
-        <div class="container-01">
-            <div class="row">
-                <div class="section__title">
-                    <h1>Nossa história</h1>
-                    <span>Espaço das Manas</span>
-                </div>
-                <div class="about__detail">
-                    <div class="about__detail__content">
-                        <div class="about__img">
-                            <img src="assests/img/about-img.jpg" alt="">
-                        </div>
-                        <div class="about__descripion">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Velit possimus a sint.</p>
-                            <p>Obcaecati porro accusamus iusto rem aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Velit possimus a sint.</p>
-                            <p>Eligendi nostrum architecto 
-                                quibusdam. Neque odio enim quasi ad culpa similique 
-                                quas.</p>
-                        </div>
-                    </div>
+                <div class="overlayButtons">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Lar</a>
+                    <a href="#">Serviços</a>
                 </div>
             </div>
         </div>
-    </section>
-    -->
+    </header>
     
+    
+    <section class="slider">
+        <div class="slider-content">
+            
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salao-01.jpg" alt="">
+                <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salao-01-mob.jpg" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salão-02.jpg" alt="">
+                <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salão-02-mob.jpg" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salao-03.jpg" alt="">
+                <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salao-03-mob.jpg" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salao-04.jpg" alt="">
+                <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salao-04-mob.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            
+        </div>
+    </section>
+    
+    <script src="JAVASCRIPT/carrossel.js"></script>
+    <script src="JAVASCRIPT/header-responsivo.js"></script>
 </body>
 </html>
