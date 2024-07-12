@@ -1,5 +1,6 @@
 @import url('header.css');
 @import url('carossel.css');
+@import url('information.css');
 
 @font-face {
     font-family: "BrownSugar-01";
@@ -27,6 +28,26 @@
 @font-face {
     font-family: "Quentin";
     src: url(../CONTEUDO/FONTES/Quentin.otf);
+}
+
+@font-face {
+    font-family: "Playflair-01";
+    src: url(../CONTEUDO/FONTES/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Playflair-02";
+    src: url(../CONTEUDO/FONTES/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "HearthStone-01";
+    src: url(../CONTEUDO/FONTES/Hearth\ Stone.otf);
+}
+
+@font-face {
+    font-family: "HearthStone-02";
+    src: url(../CONTEUDO/FONTES/Hearth\ Stone.ttf);
 }
 
     /*---------- BASE ----------*/
