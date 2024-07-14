@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    margin-bottom: 100px;
   }
   
   .background-one {
@@ -262,26 +263,37 @@
     transform: translate(0%, 0%) scaleY(1);
   }
 
-@media (max-width: 760px){
-    .container-03{
-        display: block;
-    }
+/* Ajuste responsivo para nossos-serviços */
+@media (max-width: 760px) {
+  .nossos-serviços {
+      margin-bottom: 100px;
+  }
 
-    .hero-02{
-        padding: 50px;
-    }
+  .container-03 {
+      display: block;
+  }
 
-    .hero-02 h1{
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
+  .hero-02 {
+      padding: 50px;
+  }
 
-    .background-two{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+  .hero-02 h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+  }
 
-    .link-three {
-        font-size: 60px !important;
-    }
+  .background-two {
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+  .link-three {
+      font-size: 60px !important;
+  }
+
+  .parallax {
+      background-attachment: scroll;
+      order: 2;
+  }
 }
+
