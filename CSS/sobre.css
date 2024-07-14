@@ -99,8 +99,8 @@
 
 
     .card{
-        z-index: 15;
         margin: auto;
+        margin: 2px 2px 2px 2px;
     }
 
     .sobre-nos{
@@ -116,11 +116,20 @@
     }
 
     #sobre p{
-        margin-left: 25%;
+        margin: 0 auto;
     }
 
     #sobre button{
+        margin: 0 auto;
         margin-bottom: 15px;
     }
 
+    #sobre h3{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
 }
