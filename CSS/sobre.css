@@ -97,6 +97,17 @@
 /* Media query para dispositivos móveis */
 @media (max-width: 768px) {
 
+    .hero{
+        padding: 30px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero h2{
+        font-size: 20px;
+    }
 
     .card{
         margin: auto;
@@ -116,6 +127,7 @@
     }
 
     #sobre p{
+        padding: 10px;
         margin: 0 auto;
     }
 
