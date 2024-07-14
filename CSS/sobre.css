@@ -37,12 +37,11 @@
 }
 
 .sobre-nos p{
-    width: 400px;
+    width: 100%;
     margin: 10px;
     font-size: larger;
     font-family: "Montserrat-02";
-    padding-bottom: 15px;
-    margin-left: 50px;
+    padding: 20px 30px 20px 30px;
 }
 
 .card{
@@ -128,7 +127,7 @@
     }
 
     #sobre p{
-        padding: 10px;
+        padding: 5px 15px 5px 15px;
         margin: 0 auto;
     }
 
