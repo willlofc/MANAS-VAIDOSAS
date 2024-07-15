@@ -153,9 +153,9 @@
 /* Ajuste responsivo para parallax */
 @media (max-width: 760px) {
     .parallax {
+        width: 100%;
         margin-top: 160%;
-        background-attachment: scroll;
-        order: 2;
+        background-position-x: center;
     }
 }
 
