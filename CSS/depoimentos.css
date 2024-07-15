@@ -1,0 +1,93 @@
+.hero-04{
+    text-align: center;
+    padding: 10px 60px;
+    color: #BB6363;
+}
+
+.hero-04 h1{
+    font-size: 60px;
+    font-family: "HearthStone-02";
+}
+
+.hero-04 h2{
+    font-size: 20px;
+    font-family: "Montserrat-02";
+}
+
+.fundo{
+    background-color: #FFF0F5;
+}
+
+.depoimentos{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 20px;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Montserrat-02";
+}
+
+.depoimentos  .slide-02{
+    padding: 40px 60px;
+    cursor: grab;
+}
+
+.depoimentos  .slide-02:active{
+    cursor: grabbing;
+}
+
+.depoimentos i{
+    font-size: 90px;
+    color: #dfdfdf;
+}
+
+.depoimentos p.depoi-txt{
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.slide-02  .person{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide-02  .person img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.slide-02  .person p.nome-person{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.slide-02  .person p.func-person{
+    font-size: 14px;
+}
+
+.seta{
+    color: #BB6363 !important;
+}
+
+.swiper-pagination{
+    color: #BB6363 !important;
+}
+
+@media (max-width: 768px) {
+
+    .hero-04{
+        padding: 10px 40px;
+    }
+
+    .hero-04 h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hero-04 h2{
+        font-size: 20px;
+    }
+}
