@@ -91,10 +91,8 @@ footer p, footer a {
 
 .logo-footer{
   margin-top: 100px;
-  width: 200px !important;
+  width: 200px;
   height: 200px;
-  border-radius: 30px;
-  margin-left: 5px;
 }
 
 .info-footer P{
@@ -102,19 +100,19 @@ footer p, footer a {
 }
 
 .sobre-footer  {
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 .social-icons-footer{
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 .info-footer{
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 .contatos-footer{
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 .wrapper {
@@ -193,6 +191,12 @@ color: #ffffff;
 
 .fa-whatsapp ,.fa-instagram{
     color: #fff;
+}
+
+.copyrightF{
+  font-size: 12px;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
 @media (max-width: 768px) {
