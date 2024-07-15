@@ -1,7 +1,7 @@
 .fundo-02{
     background-color: #FFF0F5 !important;
     flex: 1;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .hero-05 {
@@ -63,18 +63,12 @@
     .info-contatos {
         display: block;
         width: 100%;
-    }
-
-    .map-iframe, .contatos {
+        max-width: 350px;
         margin: 0 auto;
-        padding: 0px;
+        text-align: center;
     }
 
-    .map-iframe {
-        margin-bottom: 20px;
-    }
-
-    .fundo-02{
+    .fundo-02 {
         padding-bottom: 300px;
     }
 }
