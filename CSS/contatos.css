@@ -1,0 +1,84 @@
+.fundo-02{
+    background-color: #FFF0F5 !important;
+    flex: 1;
+    padding: 50px;
+}
+
+.hero-05 {
+    text-align: center;
+    padding: 80px;
+    color: #BB6363;
+}
+
+.hero-05 h1 {
+    font-size: 50px;
+    font-family: "HearthStone-02";
+}
+
+.hero-05 h2{
+    font-size: 20px;
+    font-family: "Montserrat-02";
+}
+
+.info-contatos{
+    display: flex;
+    margin-top: 30px;
+    width: 900px;
+    margin-top: 10px !important;
+    margin: auto;
+}
+
+.info-02 h1{
+    font-size: 40px;
+    font-family: "Playflair-02";
+    padding: 10px 20px 2px 20px;
+    color: #BB6363;
+}
+
+.info-02 p, .info-03{
+    font-size: 15px;
+    font-family: "Montserrat-02";
+    padding: 0px 20px 20px 20px;
+}
+
+.info-03{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.info-03:hover svg {
+    transform: translateY(-5px); /* Ajuste o valor para a altura desejada */
+    transition: transform 0.3s ease; /* Ajuste o tempo de transição, se necessário */
+}
+
+.info-03:hover p {
+    color: #BB9696;
+    transition: color 0.3s ease; /* Ajuste o tempo de transição, se necessário */
+}
+
+@media (max-width: 768px) {
+    .info-contatos {
+        display: block;
+        width: 100%;
+    }
+
+    .map-iframe, .contatos {
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .map-iframe {
+        margin-bottom: 20px;
+    }
+
+    .fundo-02{
+        padding-bottom: 300px;
+    }
+}
+
+
+
+
