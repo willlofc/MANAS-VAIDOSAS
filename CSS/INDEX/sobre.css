@@ -51,7 +51,7 @@
 .card {
     width: 100%;
     height: 400px;
-    background-image: url(../CONTEUDO/MANAS/manas-01.jpeg); /* Imagem de fundo */
+    background-image: url(../../CONTEUDO/MANAS/manas-01.jpeg); /* Imagem de fundo */
     background-size: cover; /* Cobrir todo o espaço disponível */
     background-repeat: no-repeat; /* Não repetir a imagem */
     background-position-y: -100px; /* Posicionamento vertical */

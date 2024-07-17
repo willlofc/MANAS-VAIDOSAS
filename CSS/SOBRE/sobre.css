@@ -1,0 +1,143 @@
+.hero-06 {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha texto ao centro */
+    padding-top: 70px; /* Espaçamento superior */
+    position: relative; /* Adicionado para centralização relativa dos elementos filhos */
+}
+
+.font-cursive {
+    font-size: 226px; /* Tamanho da fonte */
+    text-align: center; /* Alinha texto ao centro */
+    color: #f5b6b975; /* Cor do texto com transparência */
+    font-family: "Quentin"; /* Fonte personalizada */
+}
+
+.font-normal {
+    font-size: 80px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #BB6363; /* Cor do texto */
+    font-family: "Montserrat-02"; /* Fonte personalizada */
+    position: absolute; /* Posicionamento absoluto */
+    top: 65%; /* Alinha no topo */
+    left: 50%; /* Alinha na esquerda */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.fundo-03 {
+    background-color: #FFF0F5; /* Cor de fundo */
+}
+
+.história-manas {
+    display: flex; /* Display flexível */
+    justify-content: center; /* Centraliza o container principal */
+    align-items: flex-start; /* Alinha os itens no início do eixo cruzado */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para o container */
+    padding: 20px; /* Espaçamento interno */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.info-claudiana, .info-maiara {
+    display: flex; /* Display flexível */
+    flex-direction: column; /* Coluna para os itens */
+    align-items: center; /* Centraliza horizontalmente os elementos dentro deste container */
+    max-width: 600px; /* Largura máxima */
+    flex: 1; /* Distribuição flexível */
+}
+
+.title-claudiana, .title-maiara {
+    font-size: 50px; /* Tamanho da fonte */
+    color: #BB6363; /* Cor do texto */
+    font-family: "HearthStone-02"; /* Fonte personalizada */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.txt-claudiana-01, .txt-claudiana-02, .txt-maiara-01, .txt-maiara-02 {
+    font-size: large; /* Tamanho da fonte */
+    padding: 20px 0px 20px 20px; /* Espaçamento interno */
+    text-align: justify; /* Justifica o texto */
+    font-family: "Montserrat-02"; /* Fonte personalizada */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.img-claudiana-div, .img-maiara-div {
+    display: flex; /* Display flexível */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    margin-top: 30px; /* Espaçamento superior */
+    flex: 1; /* Distribuição flexível */
+}
+
+.img-claudiana, .img-maiara {
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 400px; /* Largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.imagens-claudiana, .imagens-maiara {
+    display: flex; /* Display flexível */
+    flex-direction: column; /* Coloca os containers em coluna */
+    justify-content: center; /* Centraliza o conteúdo na vertical */
+    align-items: center; /* Centraliza o conteúdo na horizontal */
+    margin: 20px; /* Espaçamento superior e inferior */
+}
+
+.container-claudiana-01, .container-claudiana-02, .container-maiara-01 {
+    display: flex; /* Display flexível */
+    justify-content: center; /* Centraliza os elementos internos horizontalmente */
+    gap: 20px; /* Espaçamento entre os containers */
+    max-width: 1200px; /* Largura máxima para os containers */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 20px; /* Espaçamento entre os conjuntos de imagens */
+}
+
+.container-claudiana-01 > div, .container-claudiana-02 > div, .container-maiara-01 > div {
+    flex: 1; /* Faz com que cada imagem ocupe a mesma largura */
+}
+
+.container-claudiana-01 img, .container-claudiana-02 img, .container-maiara-01 img {
+    width: 100%; /* Ocupa toda a largura */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras sob a imagem */
+    max-width: 600px; /* Largura máxima para as imagens */
+}
+
+@media (max-width: 1000px) {
+    .font-cursive {
+        font-size: 170px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .font-normal {
+        font-size: 50px; /* Tamanho da fonte ajustado para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .font-cursive {
+        font-size: 80px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .font-normal {
+        font-size: 30px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .história-manas {
+        flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .img-claudiana-div, .img-maiara-div {
+        order: -1; /* Move a imagem para o topo em telas menores */
+        margin-top: 0; /* Remove o espaçamento superior em telas menores */
+    }
+
+    .info-claudiana, .info-maiara {
+        order: 1; /* Garante que o texto fique abaixo da imagem */
+    }
+}
+
+@media (max-width: 350px) {
+    .font-cursive {
+        font-size: 65px; /* Tamanho da fonte ajustado para telas pequenas */
+    }
+}

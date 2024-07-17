@@ -13,50 +13,50 @@
 /* Definindo fontes personalizadas */
 @font-face {
     font-family: "BrownSugar-01";
-    src: url(../CONTEUDO/FONTES/Brown\ Sugar\ .otf);
+    src: url(../../CONTEUDO/FONTES/Brown\ Sugar\ .otf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "BrownSugar-02";
-    src: url(../CONTEUDO/FONTES/Brown\ Sugar\ .ttf);
+    src: url(../../CONTEUDO/FONTES/Brown\ Sugar\ .ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Montserrat-01";
-    src: url(../CONTEUDO/FONTES/Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(../../CONTEUDO/FONTES/Montserrat-Italic-VariableFont_wght.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Montserrat-02";
-    src: url(../CONTEUDO/FONTES/Montserrat-VariableFont_wght.ttf);
+    src: url(../../CONTEUDO/FONTES/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Quentin";
-    src: url(../CONTEUDO/FONTES/Quentin.otf);
+    src: url(../../CONTEUDO/FONTES/Quentin.otf);
 }
 
 @font-face {
     font-family: "Playflair-01";
-    src: url(../CONTEUDO/FONTES/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    src: url(../../CONTEUDO/FONTES/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Playflair-02";
-    src: url(../CONTEUDO/FONTES/PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(../../CONTEUDO/FONTES/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "HearthStone-01";
-    src: url(../CONTEUDO/FONTES/Hearth\ Stone.otf);
+    src: url(../../CONTEUDO/FONTES/Hearth\ Stone.otf);
 }
 
 @font-face {
     font-family: "HearthStone-02";
-    src: url(../CONTEUDO/FONTES/Hearth\ Stone.ttf);
+    src: url(../../CONTEUDO/FONTES/Hearth\ Stone.ttf);
 }
 
 /* Estilos globais */

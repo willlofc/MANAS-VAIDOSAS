@@ -1,6 +1,6 @@
 /* Estilos para a seção parallax */
 .parallax {
-    background-image: url("../CONTEUDO/CARROSSEL/salao-03.jpg"); /* Imagem de fundo */
+    background-image: url("../../CONTEUDO/CARROSSEL/salao-03.jpg"); /* Imagem de fundo */
     min-height: 600px; /* Altura mínima */
     width: 100%; /* Largura total */
     margin-bottom: 50px; /* Espaçamento inferior */

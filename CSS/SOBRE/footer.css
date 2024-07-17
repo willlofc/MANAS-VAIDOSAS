@@ -1,0 +1,260 @@
+/* Estilos para a imagem de onda no rodapé */
+.img-wave {
+  position: absolute; /* Posição absoluta em relação ao seu contêiner pai */
+  bottom: 0; /* Alinha a parte inferior da imagem com o rodapé */
+  left: 0; /* Alinha à esquerda do contêiner pai */
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Mantém a proporção da imagem */
+  z-index: -1; /* Coloca a imagem atrás de outros elementos */
+}
+
+/* Estilos para a segunda imagem */
+.img-have-2 {
+  display: none; /* Esconde a segunda imagem por padrão */
+}
+
+/* Estilos para o rodapé */
+footer {
+  position: relative; /* Posição relativa para os filhos posicionarem-se relativamente a este */
+}
+
+/* Estilos para a seção de onda no rodapé */
+.wave-footer {
+  min-height: 45vh; /* Altura mínima da seção de onda */
+  width: 100%; /* Ocupa toda a largura disponível */
+  position: relative; /* Posição relativa para os elementos dentro dela */
+  z-index: 2; /* Coloca acima da imagem de onda */
+}
+
+/* Estilos para o contêiner principal do rodapé */
+.container-04 {
+  max-width: 1200px; /* Largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: flex; /* Flexbox para alinhar os itens */
+  z-index: 999; /* Z-index para ficar acima de outros elementos */
+}
+
+/* Estilos para o logo no rodapé */
+.logo-footer {
+  margin-top: 100px; /* Espaçamento superior */
+  width: 200px !important; /* Largura do logo */
+  height: 200px; /* Altura do logo */
+  border-radius: 30px; /* Bordas arredondadas */
+  margin-left: 5px; /* Margem à esquerda */
+}
+
+/* Estilos para a seção "Sobre" no rodapé */
+.sobre-footer {
+  margin-top: 100px; /* Espaçamento superior */
+}
+
+/* Estilos para os ícones sociais no rodapé */
+.social-icons-footer {
+  margin-top: 100px; /* Espaçamento superior */
+}
+
+/* Estilos para as informações no rodapé */
+.info-footer {
+  margin-top: 100px; /* Espaçamento superior */
+}
+
+/* Estilos para os contatos no rodapé */
+.contatos-footer {
+  margin-top: 100px; /* Espaçamento superior */
+}
+
+/* Estilos para as seções do rodapé */
+footer .footer-section {
+  flex: 1; /* Ocupa todo o espaço disponível */
+  padding: 20px; /* Espaçamento interno */
+  min-width: 250px; /* Largura mínima */
+}
+
+/* Estilos para os títulos no rodapé */
+footer h2 {
+  font-size: 1.5em; /* Tamanho da fonte */
+  font-family: "Playflair-02"; /* Família de fonte */
+  color: #915858; /* Cor do texto */
+}
+
+/* Estilos para parágrafos e links no rodapé */
+footer p,
+footer a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-family: "Montserrat-02"; /* Família de fonte */
+}
+
+/* Estilos para o contêiner principal do rodapé */
+.container-04 {
+  max-width: 1200px; /* Largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: flex; /* Flexbox para alinhar os itens */
+  z-index: 999; /* Z-index para ficar acima de outros elementos */
+}
+
+/* Estilos para o logo no rodapé */
+.logo-footer {
+  margin-top: 100px; /* Espaçamento superior */
+  width: 200px; /* Largura do logo */
+  height: 200px; /* Altura do logo */
+}
+
+/* Estilos para o parágrafo dentro da seção de informações no rodapé */
+.info-footer p {
+  padding: 5px; /* Espaçamento interno */
+}
+
+/* Estilos para a seção "Sobre" no rodapé */
+.sobre-footer {
+  margin-top: 150px; /* Espaçamento superior */
+}
+
+/* Estilos para os ícones sociais no rodapé */
+.social-icons-footer {
+  margin-top: 150px; /* Espaçamento superior */
+}
+
+/* Estilos para as informações no rodapé */
+.info-footer {
+  margin-top: 150px; /* Espaçamento superior */
+}
+
+/* Estilos para os contatos no rodapé */
+.contatos-footer {
+  margin-top: 150px; /* Espaçamento superior */
+}
+
+/* Estilos para o wrapper dos ícones sociais */
+.wrapper {
+  display: inline-flex; /* Flexbox em linha */
+  list-style: none; /* Remove marcadores de lista */
+  font-family: "Montserrat-02"; /* Família de fonte */
+}
+
+/* Estilos para os ícones no wrapper */
+.wrapper .icon {
+  position: relative; /* Posição relativa */
+  background: #915858; /* Cor de fundo do ícone */
+  border-radius: 50%; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  margin: 10px; /* Margem externa */
+  width: 50px; /* Largura do ícone */
+  height: 50px; /* Altura do ícone */
+  font-size: 18px; /* Tamanho da fonte */
+  display: flex; /* Flexbox para alinhar conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Transição suave */
+}
+
+/* Estilos para a dica de ferramenta do ícone */
+.wrapper .tooltip {
+  position: absolute; /* Posição absoluta */
+  top: 0; /* Alinha ao topo do ícone */
+  font-size: 14px; /* Tamanho da fonte da dica */
+  background: #ffffff; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  padding: 5px 8px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  opacity: 0; /* Opacidade inicial */
+  pointer-events: none; /* Eventos de ponteiro desativados */
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Transição suave */
+}
+
+/* Estilos para o pseudo-elemento antes da dica de ferramenta */
+.wrapper .tooltip::before {
+  position: absolute; /* Posição absoluta */
+  content: ""; /* Conteúdo vazio */
+  height: 8px; /* Altura */
+  width: 8px; /* Largura */
+  background: #ffffff; /* Cor de fundo */
+  bottom: -3px; /* Alinha abaixo do ícone */
+  left: 50%; /* Alinha ao centro horizontal */
+  transform: translate(-50%) rotate(45deg); /* Rotaciona */
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Transição suave */
+}
+
+/* Estilos para a dica de ferramenta ao passar o mouse */
+.wrapper .icon:hover .tooltip {
+  top: -45px; /* Posição da dica ao passar o mouse */
+  opacity: 1; /* Opacidade */
+  visibility: visible; /* Visibilidade */
+  pointer-events: auto; /* Eventos de ponteiro ativados */
+}
+
+/* Estilos para o texto e a dica de ferramenta ao passar o mouse */
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1); /* Sombra do texto */
+}
+
+/* Estilos específicos para o ícone e a dica de ferramenta do Facebook ao passar o mouse */
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #E4405F; /* Cor de fundo do Facebook */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos específicos para o ícone e a dica de ferramenta do Instagram ao passar o mouse */
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F; /* Cor de fundo do Instagram */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para o ícone de WhatsApp e Instagram */
+.fa-whatsapp,
+.fa-instagram {
+  color: #fff; /* Cor do texto */
+}
+
+/* Estilos para o rodapé do direito autoral */
+.copyrightF {
+  font-size: 12px; /* Tamanho da fonte */
+  text-align: center; /* Alinhamento centralizado */
+  padding-bottom: 5px; /* Espaçamento inferior */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .container-04 {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Alinha ao centro */
+    text-align: center; /* Alinhamento centralizado */
+  }
+
+  .footer-section {
+    margin-top: auto; /* Margem superior automática */
+  }
+
+  .logo-footer {
+    margin-top: 20px; /* Espaçamento superior */
+  }
+
+  .fundo-mob {
+    position: relative; /* Posição relativa */
+    z-index: 2; /* Z-index */
+    background-color: #E0A2A2 !important; /* Cor de fundo */
+    margin-top: -80px; /* Espaçamento superior negativo */
+  }
+
+  .img-wave {
+    position: absolute; /* Posição absoluta */
+    top: -70px; /* Alinha acima do rodapé */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura */
+    height: auto; /* Mantém a proporção */
+    z-index: 3; /* Z-index */
+  }
+
+  .wave-footer {
+    margin-top: 350px; /* Espaçamento superior */
+  }
+}

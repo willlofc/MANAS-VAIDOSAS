@@ -1,0 +1,175 @@
+/* Estilos para o cabeçalho */
+.header {
+    position: relative; /* Posição relativa para o posicionamento dos elementos filhos */
+    width: 100%; /* Largura total */
+    background-color: white; /* Cor de fundo branca */
+    z-index: 12; /* Z-index para empilhamento */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.container {
+    display: flex; /* Display flexível para alinhamento dos itens */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui os itens igualmente */
+    padding: 0 20px; /* Espaçamento interno horizontal */
+    max-width: 1220px; /* Largura máxima */
+    margin: 0 auto; /* Margens automáticas para centralizar */
+    width: 100%; /* Largura total */
+}
+
+/* Estilos para o título do cabeçalho */
+.title {
+    display: flex; /* Display flexível para alinhamento dos itens */
+    align-items: center; /* Centraliza verticalmente */
+    color: #E0A2A2; /* Cor do texto */
+    font-family: 'Brownsugar-02'; /* Fonte do título */
+}
+
+.title h3 {
+    margin: 0; /* Margem zero */
+    font-size: 34px; /* Tamanho da fonte do título */
+}
+
+.title img {
+    max-width: 120px; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    margin-right: 10px; /* Margem direita */
+}
+
+/* Estilos para a navegação principal */
+#nav {
+    display: flex; /* Display flexível para alinhamento dos itens */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.menu {
+    font-family: "Montserrat-02"; /* Fonte do menu */
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0; /* Padding zero */
+    display: flex; /* Display flexível para alinhamento dos itens */
+    margin: 0; /* Margem zero */
+}
+
+.menu li {
+    margin-right: 15px; /* Margem direita entre os itens do menu */
+}
+
+.menu li a {
+    color: #E0A2A2; /* Cor do texto do link */
+    text-transform: uppercase; /* Transformação para maiúsculas */
+    text-decoration: none; /* Sem decoração de texto */
+    letter-spacing: 0.15em; /* Espaçamento entre letras */
+    padding: 15px 20px; /* Padding interno */
+    position: relative; /* Posição relativa para posicionamento do pseudo-elemento */
+    display: inline-block; /* Display inline-block para o link ocupar o espaço necessário */
+}
+
+.menu li a:after {
+    background: none repeat scroll 0 0 transparent; /* Fundo transparente */
+    bottom: 0; /* Alinhamento inferior */
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Display block */
+    height: 2px; /* Altura da linha */
+    left: 50%; /* Alinhamento à esquerda */
+    position: absolute; /* Posição absoluta */
+    background: #E0A2A2; /* Cor do sublinhado */
+    transition: width 0.3s ease 0s, left 0.3s ease 0s; /* Transição do sublinhado */
+    width: 0; /* Largura inicial do sublinhado */
+}
+
+.menu li a:hover:after {
+    width: 100%; /* Largura total no hover */
+    left: 0; /* Alinhamento à esquerda */
+}
+
+/* Estilos para o ícone do hamburguer e menu overlay em telas menores */
+.header .hamburguer,
+.header .overlay {
+    display: none; /* Oculta por padrão */
+}
+
+.closeButton {
+    z-index: 15; /* Z-index para empilhamento */
+}
+
+@media(max-width: 760px) {
+    /* Estilos para telas menores que 760px */
+
+    .title h3 {
+        margin: 0; /* Margem zero */
+        font-size: 21px !important; /* Tamanho da fonte do título em telas menores */
+    }
+
+    .header .title {
+        flex: 1; /* Expandir o título */
+    }
+
+    .header .menu {
+        display: none; /* Oculta o menu principal */
+    }
+
+    .header .hamburguer {
+        display: inline-block; /* Exibe o ícone do hamburguer */
+        cursor: pointer; /* Cursor do mouse */
+        padding: 10px; /* Padding interno */
+    }
+
+    .header .bar1,
+    .header .bar2,
+    .header .bar3 {
+        width: 25px; /* Largura das barras */
+        height: 3px; /* Altura das barras */
+        background-color: #E0A2A2; /* Cor das barras */
+        margin: 5px 0; /* Margem entre as barras */
+        transition: 0.4s; /* Transição de animação */
+    }
+
+    .header .overlay {
+        display: none; /* Oculta o overlay */
+        position: fixed; /* Posição fixa */
+        top: 0; /* Alinhamento superior */
+        left: 0; /* Alinhamento esquerdo */
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura total */
+        background-color: rgb(255, 255, 255); /* Cor de fundo branca */
+        z-index: 10; /* Z-index para empilhamento */
+        overflow: hidden; /* Overflow escondido */
+    }
+
+    .header .overlay.active {
+        display: block; /* Exibe o overlay ativo */
+    }
+
+    .header .closeButton {
+        position: absolute; /* Posição absoluta */
+        top: 20px; /* Alinhamento superior */
+        right: 30px; /* Alinhamento direito */
+        cursor: pointer; /* Cursor do mouse */
+    }
+
+    .header .closeButton .bar1 {
+        transform: translate(0, 5px) rotate(-44deg); /* Transformação das barras */
+    }
+
+    .header .closeButton .bar3 {
+        transform: translate(0, -5px) rotate(45deg); /* Transformação das barras */
+    }
+
+    .header .overlayButtons {
+        display: flex; /* Display flexível para alinhamento dos itens */
+        flex-direction: column; /* Direção da coluna */
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        height: 100%; /* Altura total */
+    }
+
+    .header .overlayButtons a {
+        font-family: "Montserrat-02"; /* Fonte do menu overlay */
+        color: #E0A2A2; /* Cor do texto do menu overlay */
+        font-size: 24px; /* Tamanho da fonte do menu overlay */
+        padding: 20px; /* Padding interno */
+        text-align: center; /* Alinhamento central */
+        text-decoration: none; /* Sem decoração de texto */
+    }
+}

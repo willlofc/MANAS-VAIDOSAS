@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 e o idioma da página como Português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define a viewport para que a largura da página seja igual à largura da tela, ajustando-se para diferentes tamanhos de dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Otimiza a conexão para carregar fontes do Google Fonts mais rapidamente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Otimiza a conexão para carregar fontes do Google Fonts com suporte a CORS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa o arquivo CSS do Swiper, um componente de carrossel/slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Importa o arquivo CSS do Bootstrap Icons, uma biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Importa o arquivo CSS do Font Awesome, outra biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Incluindo o favicon -->
+    <link rel="icon" type="image/png" href="../CONTEUDO/MANAS/ICONE_LOGO_BRANCA-FUNDO_ROSA-removebg-preview.png">
+    <!-- Importa o arquivo CSS global da aplicação -->
+    <link rel="stylesheet" href="../CSS/SOBRE/global.css">
+    <!-- Define o título da página como "Manas Vaidosas" -->
+    <title>Manas Vaidosas</title>
+</head>
+
+
+<body>
+    <!-- Início do corpo do documento HTML -->
+    <main>
+        <!-- Elemento principal do documento -->
+        <header class="header">
+            <!-- Cabeçalho do documento com a classe "header" -->
+            <div class="container">
+                <!-- Div para conter os elementos do cabeçalho, com a classe "container" -->
+                <div class="title">
+                    <!-- Div para conter o título e o logo, com a classe "title" -->
+                    <img src="../CONTEUDO/MANAS/ICONE-LOGO ROSA-SEM FUNDO.png" width="80px" height="80px">
+                    <!-- Imagem do logo com largura e altura definidas -->
+                    <h3>ESPAÇO DAS MANAS</h3>
+                    <!-- Título do cabeçalho, nível 3 -->
+                </div>
+                <nav id="nav">
+                    <!-- Navegação principal com o ID "nav" -->
+                    <ul class="menu">
+                        <!-- Lista não ordenada com a classe "menu" -->
+                        <li><a href="../index.html">Home</a></li>
+                        <!-- Item de menu com link para "Home" -->
+                        <li><a href="sobre.html">Sobre nós</a></li>
+                        <!-- Item de menu com link para "Sobre nós" -->
+                        <li><a href="#">Lar</a></li>
+                        <!-- Item de menu com link para "Lar" -->
+                        <li><a href="#">Serviços</a></li>
+                        <!-- Item de menu com link para "Serviços" -->
+                    </ul>
+                </nav>
+                <!-- BOTÃO HAMBURGUER PARA O MOBILE -->
+                <div class="hamburguer" onclick="toggleMenu()">
+                    <!-- Div para o botão hamburguer, com a classe "hamburguer" e função de clique "toggleMenu()" -->
+                    <div class="bar1"></div>
+                    <!-- Barra 1 do botão hamburguer -->
+                    <div class="bar2"></div>
+                    <!-- Barra 2 do botão hamburguer -->
+                    <div class="bar3"></div>
+                    <!-- Barra 3 do botão hamburguer -->
+                </div>
+                <!-- Botões do menu hamburguer -->
+                <div class="overlay" id="overlay">
+                    <!-- Div para a sobreposição do menu hamburguer, com o ID "overlay" -->
+                    <div class="closeButton" id="hamburguer" onclick="fechar()">
+                        <!-- Div para o botão de fechar o menu hamburguer, com o ID "hamburguer" e função de clique "fechar()" -->
+                        <div class="bar1" id="bar1"></div>
+                        <!-- Barra 1 do botão de fechar -->
+                        <div class="bar3" id="bar3"></div>
+                        <!-- Barra 3 do botão de fechar -->
+                    </div>
+                    <div class="overlayButtons">
+                        <!-- Div para os botões dentro da sobreposição do menu hamburguer, com a classe "overlayButtons" -->
+                        <a href="../index.html">Home</a>
+                        <!-- Link para "Home" -->
+                        <a href="sobre.html">Sobre nós</a>
+                        <!-- Link para "Sobre nós" -->
+                        <a href="#">Lar</a>
+                        <!-- Link para "Lar" -->
+                        <a href="#">Serviços</a>
+                        <!-- Link para "Serviços" -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Fim do cabeçalho -->
+
+        <section class="história-title">
+            <!-- Seção principal da história -->
+            <div class="hero-06">
+                <!-- Div com a classe hero-06 -->
+                <h1 class="font-cursive">Sobre Nós</h1>
+                <!-- Título principal com a classe font-cursive -->
+                <h2 class="font-normal">Sobre Nós</h2>
+                <!-- Subtítulo com a classe font-normal -->
+            </div>
+        </section>
+        
+
+        <section class="fundo-03">
+            <!-- Seção principal com a classe fundo-03 -->
+            <section class="história-manas">
+                <!-- Sub-seção específica da história das Manas -->
+                <div class="info-claudiana">
+                    <!-- Div com informações sobre Claudiana -->
+                    <h2 class="title-claudiana">Claudiana</h2>
+                    <!-- Título com a classe title-claudiana -->
+                    <p class="txt-claudiana-01">
+                        <!-- Primeiro parágrafo de texto sobre Claudiana -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis tempore laborum quo ut
+                        perferendis itaque provident officiis exercitationem voluptates, laudantium libero est
+                        accusantium aliquam minima! Officia beatae quo alias. Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut fugit ut quidem molestiae animi vitae laudantium vel iure quasi
+                        perspiciatis? Minus autem hic odio, aliquam fuga earum fugiat. Deleniti, adipisci.
+                    </p>
+                    <p class="txt-claudiana-02">
+                        <!-- Segundo parágrafo de texto sobre Claudiana -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis tempore laborum quo ut
+                        perferendis itaque provident officiis exercitationem voluptates, laudantium libero est
+                        accusantium aliquam minima! Officia beatae quo alias. Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut fugit ut quidem molestiae animi vitae laudantium vel iure quasi
+                        perspiciatis? Minus autem hic odio, aliquam fuga earum fugiat. Deleniti, adipisci.
+                    </p>
+                </div>
+                <div class="img-claudiana-div">
+                    <!-- Div que contém a imagem de Claudiana -->
+                    <img class="img-claudiana" src="../CONTEUDO/MANAS/claudiana-01.jpg" alt="">
+                    <!-- Imagem com a classe img-claudiana -->
+                </div>
+            </section>
+        </section>        
+
+        <section class="imagens-claudiana">
+            <!-- Seção principal com a classe imagens-claudiana -->
+            
+            <div class="container-claudiana-01">
+                <!-- Primeiro container para as imagens de Claudiana -->
+                
+                <div>
+                    <!-- Div para a primeira imagem -->
+                    <img class="img-claudiana-01" src="../CONTEUDO/MANAS/claudiana-02.jpg" alt="">
+                    <!-- Imagem com a classe img-claudiana-01 -->
+                </div>
+                
+                <div>
+                    <!-- Div para a segunda imagem -->
+                    <img class="img-claudiana-02" src="../CONTEUDO/MANAS/claudiana-03.jpg" alt="">
+                    <!-- Imagem com a classe img-claudiana-02 -->
+                </div>
+            </div>
+        
+            <div class="container-claudiana-02">
+                <!-- Segundo container para as imagens de Claudiana -->
+                
+                <div>
+                    <!-- Div para a terceira imagem -->
+                    <img class="img-claudiana-03" src="../CONTEUDO/MANAS/claudiana-04.jpg" alt="">
+                    <!-- Imagem com a classe img-claudiana-03 -->
+                </div>
+                
+                <div>
+                    <!-- Div para a quarta imagem -->
+                    <img class="img-claudiana-05" src="../CONTEUDO/MANAS/claudiana-05.jpg" alt="">
+                    <!-- Imagem com a classe img-claudiana-05 -->
+                </div>
+            </div>
+        </section>        
+
+        <section class="fundo-03">
+            <!-- Seção principal com a classe fundo-03 -->
+            
+            <section class="história-manas">
+                <!-- Seção interna com a classe história-manas -->
+                
+                <div class="img-maiara-div">
+                    <!-- Div para a imagem de Maiara -->
+                    <img class="img-maiara" src="../CONTEUDO/MANAS/maiara-01.jpg" alt="">
+                    <!-- Imagem com a classe img-maiara -->
+                </div>
+                
+                <div class="info-maiara">
+                    <!-- Div para as informações de Maiara -->
+                    <h2 class="title-maiara">Maiara</h2>
+                    <!-- Título com a classe title-maiara -->
+                    
+                    <p class="txt-maiara-01">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis tempore laborum quo ut
+                        perferendis itaque provident officiis exercitationem voluptates, laudantium libero est
+                        accusantium aliquam minima! Officia beatae quo alias. Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut fugit ut quidem molestiae animi vitae laudantium vel iure quasi
+                        perspiciatis? Minus autem hic odio, aliquam fuga earum fugiat. Deleniti, adipisci.
+                    </p>
+                    <!-- Primeiro parágrafo com a classe txt-maiara-01 -->
+                    
+                    <p class="txt-maiara-02">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis tempore laborum quo ut
+                        perferendis itaque provident officiis exercitationem voluptates, laudantium libero est
+                        accusantium aliquam minima! Officia beatae quo alias. Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aut fugit ut quidem molestiae animi vitae laudantium vel iure quasi
+                        perspiciatis? Minus autem hic odio, aliquam fuga earum fugiat. Deleniti, adipisci.
+                    </p>
+                    <!-- Segundo parágrafo com a classe txt-maiara-02 -->
+                </div>
+            </section>
+        </section>        
+
+        <section class="imagens-maiara">
+            <!-- Seção principal com a classe imagens-maiara -->
+            
+            <div class="container-maiara-01">
+                <!-- Div container para as imagens de Maiara -->
+                
+                <div>
+                    <!-- Div para a primeira imagem de Maiara -->
+                    <img class="img-maiara-01" src="../CONTEUDO/MANAS/maiara-02.jpg" alt="">
+                    <!-- Imagem com a classe img-maiara-01 -->
+                </div>
+                
+                <div>
+                    <!-- Div para a segunda imagem de Maiara -->
+                    <img class="img-maiara-02" src="../CONTEUDO/MANAS/maiara-03.jpg" alt="">
+                    <!-- Imagem com a classe img-maiara-02 -->
+                </div>
+            </div>
+        </section>        
+        </section>
+
+        <section class="hero-07">
+            <!-- Seção com a classe hero-07 para Nosso MVV -->
+            <h1>Nosso MVV</h1>
+            <!-- Título principal -->
+            <h2>Missão, Visão e Valores</h2>
+            <!-- Subtítulo -->
+        </section>        
+
+        <section class="mvv-section">
+            <!-- Seção com a classe mvv-section -->
+            <div class="mvv">
+                <!-- Div com a classe mvv -->
+                <img class="img-mvv-1" src="../CONTEUDO/SALÃO/MVV-manas.png" alt="">
+                <!-- Imagem com a classe img-mvv-1 -->
+            </div>
+            <div class="container-05">
+                <!-- Div com a classe container-05 -->
+                <img class="img-mvv-2" src="../CONTEUDO/SALÃO/MVV-manas-02.png" alt="">
+                <!-- Imagem com a classe img-mvv-2 -->
+            </div>
+        </section>        
+
+        <section>
+            <footer>
+                <div class="wave-footer">
+                    <!-- Imagem do wave -->
+                    <img class="img-wave" src="../CONTEUDO/SALÃO/wave-rosa-removebg-preview.png" alt="">
+                    <div class="fundo-mob">
+                        <!-- Div com fundo para dispositivos móveis -->
+                        <div class="img-wave2"></div>
+                        <div class="container-04">
+                            <!-- Container principal -->
+                            <img class="logo-footer" src="../CONTEUDO/MANAS/ICONE_LOGO_BRANCA-FUNDO_ROSA-removebg-preview.png"
+                                alt="">
+                            <!-- Logo do footer -->
+                            <div class="footer-section sobre-footer">
+                                <!-- Seção "Sobre Nós" -->
+                                <h2>Sobre Nós</h2>
+                                <p>Somos uma empresa dedicada a oferecer os melhores produtos e serviços para nossos clientes.</p>
+                            </div>
+                            <div class="footer-section info-footer">
+                                <!-- Seção de informações -->
+                                <h2>Informações</h2>
+                                <p> SEG-FECHADO</p>
+                                <p><a href="">TER-SEX....9H-20H</a></p>
+                                <p><a href="">SAB-DOM....8H-13H</a></p>
+                            </div>
+                            <div class="footer-section contatos-footer">
+                                <!-- Seção de contatos -->
+                                <h2>Contato</h2>
+                                <p>Email: manasvaidosas123@gmail.com</p>
+                                <p>Telefone: (11) 97674-9575</p>
+                            </div>
+                            <div class="footer-section social-icons-footer">
+                                <!-- Seção de ícones sociais -->
+                                <h2>Redes Sociais</h2>
+                                <ul class="wrapper">
+                                    <li class="icon facebook">
+                                        <span class="tooltip">Manasvaidosas</span>
+                                        <span><i class="fab fa-whatsapp"></i></span>
+                                    </li>
+                                    <li class="icon instagram">
+                                        <span class="tooltip">Manasvaidosas</span>
+                                        <span><i class="fab fa-instagram"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="copyrightF">
+                            <!-- Direitos autorais -->
+                            <hr>
+                            <p class="copy">Copyright © - Espaço das Manas</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>        
+
+    </main>
+
+    <script src="../JAVASCRIPT/header-responsivo.js"></script>
+</body>
+
+</html>

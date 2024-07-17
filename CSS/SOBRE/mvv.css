@@ -1,0 +1,89 @@
+.hero-07 {
+    margin-top: 80px; /* Margem superior */
+    margin-bottom: 50px; /* Margem inferior */
+    text-align: center; /* Alinha texto ao centro */
+    padding: 10px 60px; /* Espaçamento interno */
+    color: #BB6363; /* Cor do texto */
+}
+
+.hero-07 h1 {
+    font-size: 60px; /* Tamanho da fonte do título */
+    font-family: "HearthStone-02"; /* Fonte personalizada */
+}
+
+.hero-07 h2 {
+    font-size: 20px; /* Tamanho da fonte do subtítulo */
+    font-family: "Montserrat-02"; /* Fonte personalizada */
+    margin-bottom: 150px; /* Espaçamento inferior */
+}
+
+.mvv-section {
+    display: flex; /* Display flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Coloca os itens em coluna */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Considera a caixa do modelo de borda */
+}
+
+.mvv {
+    display: flex; /* Display flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.mvv img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras */
+}
+
+.container-05 {
+    display: none; /* Esconde a imagem por padrão */
+}
+
+.img-mvv-2 {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras */
+}
+
+/* Media query para telas menores */
+@media (max-width: 760px) {
+    .hero-07 {
+        padding: 10px 40px; /* Espaçamento interno ajustado */
+        margin-bottom: 2px; /* Margem inferior ajustada */
+    }
+
+    .hero-07 h1 {
+        font-size: 40px; /* Tamanho da fonte do título ajustado */
+        margin-bottom: 10px; /* Espaçamento inferior ajustado */
+    }
+
+    .hero-07 h2 {
+        font-size: 20px; /* Tamanho da fonte do subtítulo ajustado */
+        margin-bottom: 15px; /* Espaçamento inferior ajustado */
+    } 
+
+    .mvv-section {
+        height: auto; /* Ajusta a altura automaticamente no responsivo */
+    }
+
+    .mvv img.img-mvv-1 {
+        display: none; /* Esconde a primeira imagem no responsivo */
+    }
+
+    .container-05 {
+        display: flex; /* Mostra o container no responsivo */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+}
+
+@media (max-width: 350px) {
+    .hero-07 h1 {
+        font-size: 30px; /* Tamanho da fonte do título ajustado para telas pequenas */
+    }
+}
