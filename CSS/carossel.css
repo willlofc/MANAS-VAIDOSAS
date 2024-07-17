@@ -1,100 +1,102 @@
-section.slider{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
-    overflow: hidden;
+/* Estilos para a seção do slider */
+section.slider {
+    margin: 0 auto; /* Margem automática nas laterais */
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+    padding: 0 !important; /* Padding zero, importante para anular qualquer padding */
+    overflow: hidden; /* Ocultar overflow */
 }
 
-.slider-content{
-    width: 400%;
-    height: auto;
-    display: flex;
+/* Estilos para o conteúdo do slider */
+.slider-content {
+    width: 400%; /* Largura do conteúdo do slider (4 slides) */
+    height: auto; /* Altura automática */
+    display: flex; /* Layout flexível */
 }
 
-.slider-content input, .img-mobile{
-    display: none;
+/* Estilos para os inputs de controle e imagens */
+.slider-content input,
+.img-mobile {
+    display: none; /* Ocultar inputs de controle e imagens */
 }
 
-.slide-box{
-    width: 25% ;
-    height: auto ;
-    position: relative ;
-    text-align: center ;
-    transition: 1s;
+/* Estilos para cada caixa de slide */
+.slide-box {
+    width: 25%; /* Largura de cada slide (25% da largura total) */
+    height: auto; /* Altura automática */
+    position: relative; /* Posição relativa */
+    text-align: center; /* Centralizar texto */
+    transition: 1s; /* Transição de 1 segundo */
 }
 
-.slide-box img{
-    width: 100%;
+.slide-box img {
+    width: 100%; /* Imagem ocupando 100% da largura da caixa */
 }
 
-.nav-manual, .nav-auto {
-    position: absolute;
-    margin-top: 52%; /* Ajuste a distância do fundo conforme necessário */
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* Estilos para a navegação manual e automática */
+.nav-manual,
+.nav-auto {
+    position: absolute; /* Posição absoluta */
+    margin-top: 52%; /* Margem superior */
+    width: 100%; /* Largura total */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centralizar horizontalmente */
 }
 
-.manual-btn, .nav-auto div {
-    border: 1px solid #E0A2A2;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 5px; /* Espaçamento entre os botões */
-    transition: 0.2s;
+/* Estilos para os botões de navegação manual e automática */
+.manual-btn,
+.nav-auto div {
+    border: 1px solid #E0A2A2; /* Borda sólida */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%; /* Borda arredondada */
+    cursor: pointer; /* Cursor ponteiro */
+    margin: 0 5px; /* Margem entre os botões */
+    transition: 0.2s; /* Transição de 0.2 segundos */
 }
 
-.nav-manual .manual-btn:hover{
-    background-color: #E0A2A2;
-
+/* Estilos para o efeito de hover nos botões de navegação manual */
+.nav-manual .manual-btn:hover {
+    background-color: #E0A2A2; /* Cor de fundo ao passar o mouse */
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: #E0A2A2;
+/* Estilos para os botões de navegação automática ativos */
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3,
+#radio4:checked ~ .nav-auto .auto-btn4 {
+    background-color: #E0A2A2; /* Cor de fundo dos botões ativos */
 }
 
-#radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: #E0A2A2;
+/* Estilos para posicionar os slides com base nos inputs de controle */
+#radio2:checked ~ .primeiro {
+    margin-left: -25%; /* Posição do segundo slide */
 }
 
-#radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #E0A2A2;
+#radio3:checked ~ .primeiro {
+    margin-left: -50%; /* Posição do terceiro slide */
 }
 
-#radio4:checked ~ .nav-auto .auto-btn4{
-    background-color: #E0A2A2;
+#radio4:checked ~ .primeiro {
+    margin-left: -75%; /* Posição do quarto slide */
 }
 
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .primeiro{
-    margin-left: -75%;
-}
-
+/* Media query para telas menores que 760px */
 @media screen and (max-width: 760px) {
-
-    .manual-btn, .nav-auto div{
-        padding: 3px !important;
+    .manual-btn,
+    .nav-auto div {
+        padding: 3px !important; /* Reduzir padding dos botões */
     }
 
-    .img-desktop{
-        display: none;
+    .img-desktop {
+        display: none; /* Ocultar imagens desktop */
     }
 
-    .img-mobile{
-        display: block;
+    .img-mobile {
+        display: block; /* Mostrar imagens mobile */
     }
 
-    .nav-auto, .nav-manual{
-        margin-top: 60%;
+    .nav-auto,
+    .nav-manual {
+        margin-top: 60%; /* Ajustar margem superior */
     }
 }
-
-

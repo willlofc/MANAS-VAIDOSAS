@@ -1,3 +1,4 @@
+/* Importando os estilos CSS */
 @import url('header.css');
 @import url('carossel.css');
 @import url('sobre.css');
@@ -9,6 +10,7 @@
 @import url('contatos.css');
 @import url('teste.css');
 
+/* Definindo fontes personalizadas */
 @font-face {
     font-family: "BrownSugar-01";
     src: url(../CONTEUDO/FONTES/Brown\ Sugar\ .otf);
@@ -57,28 +59,29 @@
     src: url(../CONTEUDO/FONTES/Hearth\ Stone.ttf);
 }
 
-    /*---------- BASE ----------*/
-*, ::after, ::before{
+/* Estilos globais */
+*, ::after, ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--white);
-    font-size: var(--normal-font-size);
-    font-family: var(--font-text);
-    overflow-x: hidden;
+body {
+    background-color: var(--white); /* Define cor de fundo */
+    font-size: var(--normal-font-size); /* Define tamanho de fonte padrão */
+    font-family: var(--font-text); /* Define família de fonte */
+    overflow-x: hidden; /* Evita a rolagem horizontal */
 }
 
-ul{
-    list-style: none;
+ul {
+    list-style: none; /* Remove marcadores de lista */
 }
 
-a{
-    text-decoration: none;
+a {
+    text-decoration: none; /* Remove sublinhado de links */
 }
+

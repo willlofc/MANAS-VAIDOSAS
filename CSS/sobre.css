@@ -1,156 +1,152 @@
+/* Estilos para a seção hero */
 .hero {
-    text-align: center;
-    padding: 80px;
-    color: #BB6363;
+    text-align: center; /* Alinhamento centralizado do texto */
+    padding: 80px; /* Espaçamento interno */
+    color: #BB6363; /* Cor do texto */
 }
 
 .hero h1 {
-    font-size: 50px;
-    font-family: "HearthStone-02";
+    font-size: 50px; /* Tamanho da fonte do título principal */
+    font-family: "HearthStone-02"; /* Fonte do título principal */
 }
 
-.hero h2{
-    font-size: 20px;
-    font-family: "Montserrat-02";
+.hero h2 {
+    font-size: 20px; /* Tamanho da fonte do subtítulo */
+    font-family: "Montserrat-02"; /* Fonte do subtítulo */
 }
 
-.sobre-nos{
-    display: flex;
-    margin-top: 30px;
-    width: 900px;
-    margin-top: 10px !important;
-    margin: auto;
-    margin-bottom: 50px;
+/* Estilos para a seção sobre-nos */
+.sobre-nos {
+    display: flex; /* Flex container para alinhar os elementos lado a lado */
+    margin-top: 30px; /* Espaço superior */
+    width: 900px; /* Largura máxima do container */
+    margin: auto; /* Centralizar o container */
+    margin-bottom: 50px; /* Espaço inferior */
 }
 
-#sobre{
-    background-color: #FFF0F5 !important;
+#sobre {
+    background-color: #FFF0F5; /* Cor de fundo */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    flex: 1; /* Permite que o #sobre ocupe o espaço restante */
+    justify-content: center;
+    flex: 1;
 }
 
-.sobre-nos h3{
-    font-family: "Playflair-02";
-    font-size: 50px;
-    color: #BB6363;
+.sobre-nos h3 {
+    font-family: "Playflair-02"; /* Fonte do título */
+    font-size: 50px; /* Tamanho da fonte do título */
+    color: #BB6363; /* Cor do título */
     padding: 10px;
-    margin-left: 50px;
+    margin-left: 50px; /* Margem à esquerda */
 }
 
-.sobre-nos p{
+.sobre-nos p {
     width: 100%;
-    margin: 10px;
-    font-size: larger;
-    font-family: "Montserrat-02";
-    padding: 20px 30px 20px 30px;
+    margin: 10px; /* Margem interna */
+    font-size: larger; /* Tamanho da fonte do texto */
+    font-family: "Montserrat-02"; /* Fonte do texto */
+    padding: 20px 30px 20px 30px; /* Espaçamento interno */
 }
 
-.card{
+.card {
     width: 100%;
     height: 400px;
-    background-image: url(../CONTEUDO/MANAS/manas-01.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -100px;
-    flex: 1;
+    background-image: url(../CONTEUDO/MANAS/manas-01.jpeg); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-position-y: -100px; /* Posicionamento vertical */
+    flex: 1; /* Expandir para ocupar o espaço disponível */
 }
 
 .sobre-nos button {
     display: inline-block;
-    background-color: #BB6363;
+    background-color: #BB6363; /* Cor de fundo do botão */
     border: none;
-    color: #FFFFFF;
+    color: #FFFFFF; /* Cor do texto do botão */
     text-align: center;
-    font-size: 15px;
-    padding: 10px;
-    width: 150px;
-    transition: all 0.5s;
+    font-size: 15px; /* Tamanho da fonte do botão */
+    padding: 10px; /* Espaçamento interno */
+    width: 150px; /* Largura do botão */
+    transition: all 0.5s; /* Transição suave */
     cursor: pointer;
-    margin: 5px;
-    margin-left: 50px;
-  }
-  
-  .sobre-nos button span {
+    margin: 5px; /* Margem externa */
+    margin-left: 50px; /* Margem à esquerda */
+}
+
+.sobre-nos button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
-  }
-  
-  .sobre-nos button span:after {
+    transition: 0.5s; /* Transição suave */
+}
+
+.sobre-nos button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
-  }
-  
-  .sobre-nos button:hover span {
+    transition: 0.5s; /* Transição suave */
+}
+
+.sobre-nos button:hover span {
     padding-right: 25px;
-  }
-  
-  .sobre-nos button:hover span:after {
+}
+
+.sobre-nos button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 
-/* Media query para dispositivos móveis */
+/* Media query para telas menores que 768px */
 @media (max-width: 768px) {
 
-    .hero{
-        padding: 50px;
+    .hero {
+        padding: 50px; /* Espaçamento interno reduzido */
     }
 
-    .hero h1{
-        font-size: 40px;
-        margin-bottom: 10px;
+    .hero h1 {
+        font-size: 40px; /* Tamanho da fonte do título principal reduzido */
+        margin-bottom: 10px; /* Espaçamento inferior do título principal */
     }
 
-    .hero h2{
-        font-size: 20px;
+    .hero h2 {
+        font-size: 20px; /* Tamanho da fonte do subtítulo reduzido */
     }
 
     .card {
-        width: 98% !important;
-        padding-top: 75%; /* Ajuste conforme necessário para manter a proporção da imagem */
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
-        flex: auto;
+        width: 98% !important; /* Largura reduzida */
+        padding-top: 75%; /* Proporção da altura */
+        background-size: cover; /* Cobrir todo o espaço disponível */
+        background-position: center; /* Posicionamento central da imagem de fundo */
+        margin: 0 auto; /* Centralizar o elemento */
+        flex: auto; /* Expandir para ocupar o espaço disponível */
     }
 
-    .sobre-nos{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+    .sobre-nos {
+        width: 100%; /* Largura total */
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralizar itens */
     }
 
-    #sobre{
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-        flex: auto;
+    #sobre {
+        width: 100%; /* Largura total */
+        margin-left: 0; /* Margem à esquerda zero */
+        text-align: center; /* Alinhamento centralizado */
+        flex: auto; /* Expandir para ocupar o espaço disponível */
     }
 
-    #sobre p{
-        padding: 5px 15px 5px 15px;
-        margin: 0 auto;
+    #sobre p {
+        padding: 5px 15px 5px 15px; /* Espaçamento interno reduzido */
+        margin: 0 auto; /* Centralizar o elemento */
     }
 
-    #sobre button{
-        margin: 0 auto;
-        margin-bottom: 15px;
+    #sobre button {
+        margin: 0 auto; /* Centralizar o botão */
+        margin-bottom: 15px; /* Espaçamento inferior */
     }
 
-    #sobre h3{
-        margin: 0 auto;
+    #sobre h3 {
+        margin: 0 auto; /* Centralizar o título */
     }
-
-}
-
-@media (max-width: 480px) {
-    
 }

@@ -1,108 +1,102 @@
+/* Estilos para a seção hero-02 */
 .hero-02 {
-    text-align: center;
-    padding: 80px;
-    color: #BB6363;
+  text-align: center; /* Alinhamento centralizado do texto */
+  padding: 80px; /* Espaçamento interno */
+  color: #BB6363; /* Cor do texto */
 }
 
 .hero-02 h1 {
-    font-size: 50px;
-    font-family: "HearthStone-02";
+  font-size: 50px; /* Tamanho da fonte do título principal */
+  font-family: "HearthStone-02"; /* Fonte do título principal */
 }
 
-.hero-02 p{
-    color: #000;
-    font-size: 20px;
-    font-family: "Montserrat-02";
+.hero-02 p {
+  color: #000; /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte do parágrafo */
+  font-family: "Montserrat-02"; /* Fonte do parágrafo */
 }
 
-.container-03{
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    margin-bottom: 100px;
-  }
-  
-  .background-one {
-    margin: 5px ;
-    border: 2px solid #915858;
-    background-color: #FFF0F5;
-  }
-  
-  .background-two {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 2px solid #915858;
-    background-color: #FFF0F5;
-  }
-  
-  .background-three {
-    margin: 5px;
-    border: 2px solid #915858;
-    background-color: #FFF0F5;
-  }
-  
-  .link-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    position: relative;
-    z-index: 0;
-  }
-  
-  .container-03 a {
-    font-family: "Quentin";
-    font-size: 70px;
-  }
+/* Estilos para o grid container .container-03 */
+.container-03 {
+  height: 500px; /* Altura do container */
+  display: grid; /* Layout em grid */
+  grid-template-columns: repeat(3, 1fr); /* Três colunas com largura igual */
+  grid-template-rows: 1fr; /* Uma única linha com altura igual */
+  margin-bottom: 550px; /* Espaço inferior */
+}
 
-  .container-03{
-    color: #915858;
-    font-family: "Montserrat-02";
-    font-size: 15px;
-  }
-  
-  .link-one {
-    color: #915858;
-    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
-    line-height: 1em;
-  }
-  
-  .link-one:hover {
-    color: #fff;
-    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
-  }
-  
-  .link-one::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #C38888;
-  
-    clip-path: circle(0% at 50% calc(50%));
-    transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-  
-  .link-one:hover::before {
-    clip-path: circle(100% at 50% 50%);
-  }
-  
-  .link-one::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-  
-    clip-path: polygon(
+/* Estilos para os elementos dentro do grid */
+.background-one,
+.background-two,
+.background-three {
+  margin: 5px; /* Margem externa */
+  border: 2px solid #915858; /* Borda sólida */
+  background-color: #FFF0F5; /* Cor de fundo */
+}
+
+/* Estilos para o link container */
+.link-container {
+  display: flex; /* Flex container para alinhar os itens */
+  flex-direction: column; /* Layout de coluna */
+  justify-content: center; /* Centralizar verticalmente */
+  align-items: center; /* Centralizar horizontalmente */
+  height: 500px; /* Altura do container */
+  position: relative; /* Posição relativa */
+  z-index: 0; /* Z-index */
+}
+
+/* Estilos para os links */
+.container-03 a {
+  font-family: "Quentin"; /* Fonte do link */
+  font-size: 70px; /* Tamanho da fonte */
+  color: #915858; /* Cor do texto */
+}
+
+.container-03 {
+  color: #915858; /* Cor do texto */
+  font-family: "Montserrat-02"; /* Fonte */
+  font-size: 15px; /* Tamanho da fonte */
+}
+
+/* Estilos para o link um */
+.link-one {
+  color: #915858; /* Cor do texto */
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0); /* Transição de cor */
+  line-height: 1em; /* Altura da linha */
+}
+
+.link-one:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1); /* Transição de cor */
+}
+
+.link-one::before {
+  content: ""; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  z-index: -1; /* Z-index inferior */
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  top: 0; /* Alinhamento superior */
+  right: 0; /* Alinhamento direito */
+  background-color: #C38888; /* Cor de fundo */
+  clip-path: circle(0% at 50% calc(50%)); /* Clip-path */
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1); /* Transição de clip-path */
+}
+
+.link-one:hover::before {
+  clip-path: circle(100% at 50% 50%); /* Clip-path ao passar o mouse */
+}
+
+.link-one::after {
+  content: ""; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  z-index: -1; /* Z-index inferior */
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  top: 0; /* Alinhamento superior */
+  right: 0; /* Alinhamento direito */
+  background-color: #fff; /* Cor de fundo */
+  clip-path: polygon(
       40% 0%,
       60% 0%,
       60% 0%,
@@ -111,13 +105,12 @@
       60% 100%,
       60% 100%,
       40% 100%
-    );
-  
-    transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-  
-  .link-one:hover::after {
-    clip-path: polygon(
+  ); /* Clip-path */
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1); /* Transição de clip-path */
+}
+
+.link-one:hover::after {
+  clip-path: polygon(
       40% 10%,
       60% 10%,
       60% 35%,
@@ -126,28 +119,29 @@
       60% 90%,
       60% 65%,
       40% 65%
-    );
-  }
-  
-  .link-two {
-    color: #915858;
-    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
-  }
-  
-  .link-two:hover {
-    color: #fff;
-    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
-  }
-  
-  .link-two::before {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    clip-path: polygon(
+  ); /* Clip-path ao passar o mouse */
+}
+
+/* Estilos para o link dois */
+.link-two {
+  color: #915858; /* Cor do texto */
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0); /* Transição de cor */
+}
+
+.link-two:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1); /* Transição de cor */
+}
+
+.link-two::before {
+  content: ""; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  z-index: -2; /* Z-index inferior */
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  top: 0; /* Alinhamento superior */
+  right: 0; /* Alinhamento direito */
+  clip-path: polygon(
       0% -20%,
       100% -30%,
       100% -10%,
@@ -156,14 +150,13 @@
       100% 120%,
       100% 100%,
       0% 110%
-    );
-    background-color: #E0A2A2;
-  
-    transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
-  }
-  
-  .link-two:hover::before {
-    clip-path: polygon(
+  ); /* Clip-path */
+  background-color: #E0A2A2; /* Cor de fundo */
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1); /* Transição de clip-path */
+}
+
+.link-two:hover::before {
+  clip-path: polygon(
       0% 10%,
       100% 0%,
       100% 20%,
@@ -172,49 +165,48 @@
       100% 90%,
       100% 70%,
       0% 80%
-    );
-  }
-  
-  .link-two::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 5ch;
-    height: 5ch;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%) rotate(0deg) scale(0);
-    transition: transform 1s ease;
-  
-    background-color: #E0A2A2;
-  }
-  
-  .link-two:hover::after {
-    transform: translate(50%, -50%) rotate(135deg) scale(1);
-  }
-  
-  .link-three {
-    color: #915858;
-    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
-  }
-  
-  .link-three:hover{
-    color: #fff;
-    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
-  }
-  
-  .link-three::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    transform: translate(0, -50%) scaleY(0);
-    transition: transform 1s ease;
-  
-    clip-path: polygon(
+  ); /* Clip-path ao passar o mouse */
+}
+
+.link-two::after {
+  content: ""; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  z-index: -1; /* Z-index inferior */
+  width: 5ch; /* Largura */
+  height: 5ch; /* Altura */
+  top: 50%; /* Alinhamento superior */
+  right: 50%; /* Alinhamento direito */
+  transform: translate(50%, -50%) rotate(0deg) scale(0); /* Transformação */
+  transition: transform 1s ease; /* Transição */
+  background-color: #E0A2A2; /* Cor de fundo */
+}
+
+.link-two:hover::after {
+  transform: translate(50%, -50%) rotate(135deg) scale(1); /* Transformação ao passar o mouse */
+}
+
+/* Estilos para o link três */
+.link-three {
+  color: #915858; /* Cor do texto */
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0); /* Transição de cor */
+}
+
+.link-three:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1); /* Transição de cor */
+}
+
+.link-three::after {
+  content: ""; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  z-index: -1; /* Z-index inferior */
+  width: 50%; /* Largura */
+  height: 100%; /* Altura */
+  top: 0%; /* Alinhamento superior */
+  left: 0%; /* Alinhamento esquerdo */
+  transform: translate(0, -50%) scaleY(0); /* Transformação */
+  transition: transform 1s ease; /* Transição */
+  clip-path: polygon(
       20% 60%,
       100% 60%,
       100% 40%,
@@ -223,29 +215,25 @@
       60% 0%,
       60% 20%,
       20% 20%
-    );
-  
-    background-color: #f3b6b6;
-  }
-  
-  .link-three:hover::after {
-    transform: translate(0, 0%) scaleY(1);
-  }
-  
-  
-  .link-three::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-    height: 100%;
-    bottom: 0%;
-    right: 0%;
-    transform: translate(0, 50%) scaleY(0);
-    transition: transform 1s ease;
-  
-  
-    clip-path: polygon(
+  ); /* Clip-path */
+  background-color: #f3b6b6; /* Cor de fundo */
+}
+
+.link-three:hover::after {
+  transform: translate(0, 0%) scaleY(1); /* Transformação ao passar o mouse */
+}
+
+.link-three::before {
+  content: ""; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  z-index: -1; /* Z-index inferior */
+  width: 50%; /* Largura */
+  height: 100%; /* Altura */
+  bottom: 0%; /* Alinhamento inferior */
+  right: 0%; /* Alinhamento direito */
+  transform: translate(0, 50%) scaleY(0); /* Transformação */
+  transition: transform 1s ease; /* Transição */
+  clip-path: polygon(
       80% 40%,
       0% 40%,
       0% 60%,
@@ -254,46 +242,47 @@
       40% 100%,
       40% 80%,
       80% 80%
-    );
-  
-    background-color: #f3b6b6;
-  }
-  
-  .link-three:hover::before {
-    transform: translate(0%, 0%) scaleY(1);
-  }
+  ); /* Clip-path */
+  background-color: #f3b6b6; /* Cor de fundo */
+}
 
-/* Ajuste responsivo para nossos-serviços */
+.link-three:hover::before {
+  transform: translate(0%, 0%) scaleY(1); /* Transformação ao passar o mouse */
+}
+
+/* Media query para telas menores que 760px */
 @media (max-width: 760px) {
-  .nossos-serviços {
-      margin-bottom: 100px;
-  }
 
-  .container-03 {
-      display: block;
-  }
-
+  /* Ajustes para a seção hero-02 */
   .hero-02 {
-      padding: 50px;
+      padding: 50px; /* Espaçamento interno reduzido */
   }
 
   .hero-02 h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 40px; /* Tamanho da fonte do título principal reduzido */
+      margin-bottom: 10px; /* Espaçamento inferior do título principal */
   }
 
+  /* Ajustes para o grid container .container-03 */
+  .container-03 {
+      display: block; /* Layout de bloco */
+  }
+
+  /* Ajustes para os elementos .background-two */
   .background-two {
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 5px; /* Margem à esquerda */
+      margin-right: 5px; /* Margem à direita */
   }
 
-  .link-three {
-      font-size: 60px !important;
+  /* Ajustes para os links .link-one e .link-three */
+  .link-three,
+  .link-one {
+      font-size: 60px !important; /* Tamanho da fonte dos links */
   }
 
+  /* Ajustes para elementos específicos, se necessário */
   .parallax {
-      background-attachment: scroll;
-      order: 2;
+      background-attachment: scroll; /* Anexo de fundo de rolagem */
+      order: 2; /* Ordem de exibição */
   }
 }
-

@@ -1,162 +1,161 @@
+/* Estilos para a seção parallax */
 .parallax {
-    /* The image used */
-    background-image: url("../CONTEUDO/CARROSSEL/salao-03.jpg");
-  
-    /* Set a specific height */
-    min-height: 600px;
-    width: 100%;
-    margin-bottom: 50px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position-y: -10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    /* Center the content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-image: url("../CONTEUDO/CARROSSEL/salao-03.jpg"); /* Imagem de fundo */
+    min-height: 600px; /* Altura mínima */
+    width: 100%; /* Largura total */
+    margin-bottom: 50px; /* Espaçamento inferior */
+    background-attachment: fixed; /* Fixar o background durante a rolagem */
+    background-position-y: -10px; /* Posição vertical do background */
+    background-repeat: no-repeat; /* Não repetir o background */
+    background-size: cover; /* Redimensionar o background para cobrir */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    text-align: center; /* Alinhar o texto centralmente */
 }
 
+/* Estilos para o conteúdo dentro da seção parallax */
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Layout em coluna */
+    align-items: center; /* Centralizar verticalmente */
 }
 
-.hero-03 h4, .hero-03 h1, .hero-03 p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+/* Estilos para os títulos e textos */
+.hero-03 h4,
+.hero-03 h1,
+.hero-03 p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
 
 .hero-03 h4 {
-    font-size: 15px;
-    font-family: "Montserrat-02";
-    color: #C2C2C2;
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: "Montserrat-02"; /* Fonte */
+    color: #C2C2C2; /* Cor do texto */
 }
 
 .hero-03 h1 {
-    font-size: 60px;
-    font-family: "HearthStone-02";
-    color: #C38888;
+    font-size: 60px; /* Tamanho da fonte */
+    font-family: "HearthStone-02"; /* Fonte */
+    color: #C38888; /* Cor do texto */
 }
 
 .hero-03 p {
-    font-size: 20px;
-    font-family: "Montserrat-02";
-    color: #fff;
-    padding: 10px;
-    max-width: 60%;  /* Limit the width of the paragraph */
-    margin: 0 auto;  /* Center the paragraph */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: "Montserrat-02"; /* Fonte */
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    max-width: 60%; /* Largura máxima */
+    margin: 0 auto; /* Centralizar horizontalmente */
 }
 
+/* Estilos para o botão */
 .btn-salao a {
-    display: inline-block;
-    position: relative;
-    padding: 10px 20px;
-    margin-top: 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    letter-spacing: 4px;
-    font-family: "Montserrat-02";
+    display: inline-block; /* Display em linha */
+    position: relative; /* Posição relativa */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Margem superior */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    overflow: hidden; /* Ocultar conteúdo overflow */
+    transition: .5s; /* Transição */
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    font-family: "Montserrat-02"; /* Fonte */
 }
 
 .btn-salao a:hover {
-    background: #915858;
-    color: #fff;
-    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+    background: #915858; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff; /* Sombra */
 }
 
 .btn-salao span {
-    position: absolute;
-    display: block;
+    position: absolute; /* Posição absoluta */
+    display: block; /* Display em bloco */
 }
 
 .btn-salao span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #915858);
-    animation: btn-anim1 1s linear infinite;
+    top: 0; /* Posicionamento superior */
+    left: -100%; /* Posicionamento à esquerda */
+    width: 100%; /* Largura */
+    height: 2px; /* Altura */
+    background: linear-gradient(90deg, transparent, #915858); /* Gradiente linear */
+    animation: btn-anim1 1s linear infinite; /* Animação */
 }
 
 .btn-salao span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #915858);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s;
+    top: -100%; /* Posicionamento superior */
+    right: 0; /* Posicionamento à direita */
+    width: 2px; /* Largura */
+    height: 100%; /* Altura */
+    background: linear-gradient(180deg, transparent, #915858); /* Gradiente linear */
+    animation: btn-anim2 1s linear infinite; /* Animação */
+    animation-delay: .25s; /* Delay da animação */
 }
 
 .btn-salao span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #915858);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s;
+    bottom: 0; /* Posicionamento inferior */
+    right: -100%; /* Posicionamento à direita */
+    width: 100%; /* Largura */
+    height: 2px; /* Altura */
+    background: linear-gradient(270deg, transparent, #915858); /* Gradiente linear */
+    animation: btn-anim3 1s linear infinite; /* Animação */
+    animation-delay: .5s; /* Delay da animação */
 }
 
 .btn-salao span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #915858);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s;
+    bottom: -100%; /* Posicionamento inferior */
+    left: 0; /* Posicionamento à esquerda */
+    width: 2px; /* Largura */
+    height: 100%; /* Altura */
+    background: linear-gradient(360deg, transparent, #915858); /* Gradiente linear */
+    animation: btn-anim4 1s linear infinite; /* Animação */
+    animation-delay: .75s; /* Delay da animação */
 }
 
+/* Animações para os spans do botão */
 @keyframes btn-anim1 {
     0% {
-        left: -100%;
+        left: -100%; /* Posição inicial */
     }
     50%, 100% {
-        left: 100%;
+        left: 100%; /* Posição final */
     }
 }
 
 @keyframes btn-anim2 {
     0% {
-        top: -100%;
+        top: -100%; /* Posição inicial */
     }
     50%, 100% {
-        top: 100%;
+        top: 100%; /* Posição final */
     }
 }
 
 @keyframes btn-anim3 {
     0% {
-        right: -100%;
+        right: -100%; /* Posição inicial */
     }
     50%, 100% {
-        right: 100%;
+        right: 100%; /* Posição final */
     }
 }
 
 @keyframes btn-anim4 {
     0% {
-        bottom: -100%;
+        bottom: -100%; /* Posição inicial */
     }
     50%, 100% {
-        bottom: 100%;
+        bottom: 100%; /* Posição final */
     }
 }
 
-/* Ajuste responsivo para parallax */
+/* Media query para telas menores que 760px */
 @media (max-width: 760px) {
     .parallax {
-        width: 100%;
-        margin-top: 230%;
-        background-position-x: center;
+        width: 100%; /* Largura total */
+        margin-top: 500%; /* Margem superior para ajuste de layout */
+        background-position-x: center; /* Centralizar o background horizontalmente */
     }
 }
-

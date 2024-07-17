@@ -1,18 +1,22 @@
-var radio = document.querySelector('.manual-btn')
-var cont = 1
+let cont = 1;
 
-document.getElementById('radio1').checked = true
+// Seleciona o primeiro radio button
+document.getElementById('radio1').checked = true;
 
-setInterval(() => (
-    proximaImg()
-), 5000)
+// Define um intervalo para alternar as imagens a cada 5 segundos
+setInterval(() => {
+    proximaImg();
+}, 5000);
 
-function  proximaImg(){
-    cont++
+// Função para avançar para a próxima imagem
+function proximaImg() {
+    cont++;
 
-    if(cont > 4){
-        cont = 1
+    // Reinicia o contador se ultrapassar o número máximo de imagens
+    if (cont > 4) {
+        cont = 1;
     }
 
-    document.getElementById('radio'+cont).checked = true
+    // Seleciona o radio button correspondente à próxima imagem
+    document.getElementById('radio' + cont).checked = true;
 }

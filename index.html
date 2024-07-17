@@ -1,290 +1,502 @@
 <!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 e o idioma da página como Português do Brasil -->
 <html lang="pt-BR">
 
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define a viewport para que a largura da página seja igual à largura da tela, ajustando-se para diferentes tamanhos de dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Otimiza a conexão para carregar fontes do Google Fonts mais rapidamente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Otimiza a conexão para carregar fontes do Google Fonts com suporte a CORS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa o arquivo CSS do Swiper, um componente de carrossel/slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Importa o arquivo CSS do Bootstrap Icons, uma biblioteca de ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Importa o arquivo CSS do Font Awesome, outra biblioteca de ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Importa o arquivo CSS global da aplicação -->
     <link rel="stylesheet" href="./CSS/global.css">
-
+    <!-- Define o título da página como "Manas Vaidosas" -->
     <title>Manas Vaidosas</title>
 </head>
 
+
 <body>
+    <!-- Início do corpo do documento HTML -->
+    <main>
+    <!-- Elemento principal do documento -->
     <header class="header">
+        <!-- Cabeçalho do documento com a classe "header" -->
         <div class="container">
+            <!-- Div para conter os elementos do cabeçalho, com a classe "container" -->
             <div class="title">
+                <!-- Div para conter o título e o logo, com a classe "title" -->
                 <img src="./CONTEUDO/MANAS/ICONE-LOGO ROSA-SEM FUNDO.png" width="80px" height="80px">
+                <!-- Imagem do logo com largura e altura definidas -->
                 <h3>ESPAÇO DAS MANAS</h3>
+                <!-- Título do cabeçalho, nível 3 -->
             </div>
             <nav id="nav">
+                <!-- Navegação principal com o ID "nav" -->
                 <ul class="menu">
+                    <!-- Lista não ordenada com a classe "menu" -->
                     <li><a href="#">Home</a></li>
+                    <!-- Item de menu com link para "Home" -->
                     <li><a href="#">Sobre nós</a></li>
+                    <!-- Item de menu com link para "Sobre nós" -->
                     <li><a href="#">Lar</a></li>
+                    <!-- Item de menu com link para "Lar" -->
                     <li><a href="#">Serviços</a></li>
+                    <!-- Item de menu com link para "Serviços" -->
                 </ul>
             </nav>
             <!-- BOTÃO HAMBURGUER PARA O MOBILE -->
             <div class="hamburguer" onclick="toggleMenu()">
+                <!-- Div para o botão hamburguer, com a classe "hamburguer" e função de clique "toggleMenu()" -->
                 <div class="bar1"></div>
+                <!-- Barra 1 do botão hamburguer -->
                 <div class="bar2"></div>
+                <!-- Barra 2 do botão hamburguer -->
                 <div class="bar3"></div>
+                <!-- Barra 3 do botão hamburguer -->
             </div>
             <!-- Botões do menu hamburguer -->
             <div class="overlay" id="overlay">
+                <!-- Div para a sobreposição do menu hamburguer, com o ID "overlay" -->
                 <div class="closeButton" id="hamburguer" onclick="fechar()">
+                    <!-- Div para o botão de fechar o menu hamburguer, com o ID "hamburguer" e função de clique "fechar()" -->
                     <div class="bar1" id="bar1"></div>
+                    <!-- Barra 1 do botão de fechar -->
                     <div class="bar3" id="bar3"></div>
+                    <!-- Barra 3 do botão de fechar -->
                 </div>
                 <div class="overlayButtons">
+                    <!-- Div para os botões dentro da sobreposição do menu hamburguer, com a classe "overlayButtons" -->
                     <a href="#">Home</a>
+                    <!-- Link para "Home" -->
                     <a href="#">Sobre nós</a>
+                    <!-- Link para "Sobre nós" -->
                     <a href="#">Lar</a>
+                    <!-- Link para "Lar" -->
                     <a href="#">Serviços</a>
+                    <!-- Link para "Serviços" -->
                 </div>
             </div>
         </div>
     </header>
+    <!-- Fim do cabeçalho -->
 
     <section class="slider">
+        <!-- Seção do slider/carrossel com a classe "slider" -->
         <div class="slider-content">
+            <!-- Div para conter o conteúdo do slider, com a classe "slider-content" -->
 
             <input type="radio" name="btn-radio" id="radio1">
+            <!-- Input do tipo rádio para controle do slider, com o nome "btn-radio" e ID "radio1" -->
             <input type="radio" name="btn-radio" id="radio2">
+            <!-- Input do tipo rádio para controle do slider, com o nome "btn-radio" e ID "radio2" -->
             <input type="radio" name="btn-radio" id="radio3">
+            <!-- Input do tipo rádio para controle do slider, com o nome "btn-radio" e ID "radio3" -->
             <input type="radio" name="btn-radio" id="radio4">
+            <!-- Input do tipo rádio para controle do slider, com o nome "btn-radio" e ID "radio4" -->
 
             <div class="slide-box primeiro">
+                <!-- Div para o primeiro slide, com as classes "slide-box" e "primeiro" -->
                 <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salao-01.jpg" alt="">
+                <!-- Imagem do primeiro slide para desktop, com a classe "img-desktop" -->
                 <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salao-01-mob.jpg" alt="">
+                <!-- Imagem do primeiro slide para mobile, com a classe "img-mobile" -->
             </div>
 
             <div class="slide-box">
+                <!-- Div para o segundo slide, com a classe "slide-box" -->
                 <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salão-02.jpg" alt="">
+                <!-- Imagem do segundo slide para desktop, com a classe "img-desktop" -->
                 <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salão-02-mob.jpg" alt="">
+                <!-- Imagem do segundo slide para mobile, com a classe "img-mobile" -->
             </div>
 
             <div class="slide-box">
+                <!-- Div para o terceiro slide, com a classe "slide-box" -->
                 <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salao-03.jpg" alt="">
+                <!-- Imagem do terceiro slide para desktop, com a classe "img-desktop" -->
                 <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salao-03-mob.jpg" alt="">
+                <!-- Imagem do terceiro slide para mobile, com a classe "img-mobile" -->
             </div>
 
             <div class="slide-box">
+                <!-- Div para o quarto slide, com a classe "slide-box" -->
                 <img class="img-desktop" src="./CONTEUDO/CARROSSEL/salao-04.jpg" alt="">
+                <!-- Imagem do quarto slide para desktop, com a classe "img-desktop" -->
                 <img class="img-mobile" src="./CONTEUDO/CARROSSEL/salao-04-mob.jpg" alt="">
+                <!-- Imagem do quarto slide para mobile, com a classe "img-mobile" -->
             </div>
 
             <div class="nav-auto">
+                <!-- Navegação automática do slider, com a classe "nav-auto" -->
                 <div class="auto-btn1"></div>
+                <!-- Botão automático 1, com a classe "auto-btn1" -->
                 <div class="auto-btn2"></div>
+                <!-- Botão automático 2, com a classe "auto-btn2" -->
                 <div class="auto-btn3"></div>
+                <!-- Botão automático 3, com a classe "auto-btn3" -->
                 <div class="auto-btn4"></div>
+                <!-- Botão automático 4, com a classe "auto-btn4" -->
             </div>
 
             <div class="nav-manual">
+                <!-- Navegação manual do slider, com a classe "nav-manual" -->
                 <label for="radio1" class="manual-btn"></label>
+                <!-- Botão manual 1, associado ao "radio1" com a classe "manual-btn" -->
                 <label for="radio2" class="manual-btn"></label>
+                <!-- Botão manual 2, associado ao "radio2" com a classe "manual-btn" -->
                 <label for="radio3" class="manual-btn"></label>
+                <!-- Botão manual 3, associado ao "radio3" com a classe "manual-btn" -->
                 <label for="radio4" class="manual-btn"></label>
+                <!-- Botão manual 4, associado ao "radio4" com a classe "manual-btn" -->
             </div>
-
         </div>
     </section>
+    <!-- Fim da seção do slider -->
 
     <section class="hero">
+        <!-- Seção "hero" para destacar conteúdo importante, com a classe "hero" -->
         <h1>Nossa História</h1>
+        <!-- Título principal da seção, nível 1 -->
         <h2>Espaço das Manas</h2>
+        <!-- Subtítulo da seção, nível 2 -->
     </section>
+    <!-- Fim da seção "hero" -->
 
     <section class="sobre-nos">
+        <!-- Seção "sobre-nos" para informações sobre a equipe/empresa, com a classe "sobre-nos" -->
         <div class="card"></div>
+        <!-- Div vazia com a classe "card" (presumivelmente para um cartão ou conteúdo futuro) -->
         <div id="sobre">
+            <!-- Div com o ID "sobre" para o conteúdo principal -->
             <h3>Sobre nós</h3>
+            <!-- Título da seção sobre nós, nível 3 -->
             <p>Somos a Maiara e Claudiana, duas irmãs empreendedoras. Nossa missão vai além da estética, queremos
                 elevar a autoestima das mulheres que confiam em nós, tornando cada atendimento especial e único.</p>
+            <!-- Parágrafo com informações sobre a empresa/equipe -->
             <a href="#"><button class="button" style="vertical-align:middle"><span>Saiba Mais</span></button></a>
+            <!-- Botão "Saiba Mais" com a classe "button" -->
         </div>
     </section>
+    <!-- Fim da seção "sobre-nos" -->    
 
     <section class="hero-02">
+        <!-- Seção "hero-02" para destacar conteúdo importante, com a classe "hero-02" -->
         <h1>Nossos Serviços</h1>
-        <p>Oferecemos uma ampla gama de produtos/serviços que incluem manicure, pedicure, sobrancelha, cilios e
+        <!-- Título principal da seção, nível 1 -->
+        <p>Oferecemos uma ampla gama de produtos/serviços que incluem manicure, pedicure, sobrancelha, cílios e
             maquiagem. Cada item em nosso catálogo é cuidadosamente selecionado/testado para garantir que atenda
             aos nossos altos padrões de qualidade e atenda às necessidades dos nossos clientes</p>
+        <!-- Parágrafo com informações sobre os serviços oferecidos -->
     </section>
+    <!-- Fim da seção "hero-02" -->    
 
     <section class="nossos-serviços">
+        <!-- Seção "nossos-serviços" para apresentar os serviços oferecidos, com a classe "nossos-serviços" -->
         <div class="container-03">
+            <!-- Div para conter o conteúdo dos serviços, com a classe "container-03" -->
             <div class="background-one">
+                <!-- Div com fundo de cor um, para estilo visual -->
                 <div class="link-container">
+                    <!-- Div para conter o link e título do serviço -->
                     <a class="link-one" href="#">Manicure</a>
+                    <!-- Link para o serviço de manicure -->
                     <h2>Manicure</h2>
+                    <!-- Título do serviço de manicure -->
                 </div>
             </div>
             <div class="background-two link-container">
+                <!-- Div com fundo de cor dois, para estilo visual, e container de link -->
                 <a class="link-two" href="#">Cílios</a>
+                <!-- Link para o serviço de cílios -->
                 <h2>Cílios</h2>
+                <!-- Título do serviço de cílios -->
             </div>
             <div class="background-three link-container">
+                <!-- Div com fundo de cor três, para estilo visual, e container de link -->
                 <a class="link-three" href="#">Sobrancelha</a>
+                <!-- Link para o serviço de sobrancelha -->
                 <h2>Sobrancelha</h2>
+                <!-- Título do serviço de sobrancelha -->
+            </div>
+            <div class="background-one">
+                <!-- Div com fundo de cor um, para estilo visual -->
+                <div class="link-container">
+                    <!-- Div para conter o link e título do serviço -->
+                    <a class="link-one" href="#">Alongamento</a>
+                    <!-- Link para o serviço de alongamento -->
+                    <h2>Alongamento</h2>
+                    <!-- Título do serviço de alongamento -->
+                </div>
+            </div>
+            <div class="background-two link-container">
+                <!-- Div com fundo de cor dois, para estilo visual, e container de link -->
+                <a class="link-three" href="#">Blindagem</a>
+                <!-- Link para o serviço de blindagem -->
+                <h2>Blindagem</h2>
+                <!-- Título do serviço de blindagem -->
+            </div>
+            <div class="background-three link-container">
+                <!-- Div com fundo de cor três, para estilo visual, e container de link -->
+                <a class="link-one" href="#">Depilação</a>
+                <!-- Link para o serviço de depilação -->
+                <h2>Depilação</h2>
+                <!-- Título do serviço de depilação -->
             </div>
         </div>
+        <!-- Fim do container de serviços -->
+    
         <br><br><br><br><br><br>
+        <!-- Quebras de linha para ajuste de layout (devem ser evitadas, utilizar CSS para espaçamento) -->
+    
         <div class="parallax">
+            <!-- Div para efeito parallax, com a classe "parallax" -->
             <div class="content">
+                <!-- Div para o conteúdo dentro do efeito parallax, com a classe "content" -->
                 <div class="hero-03">
+                    <!-- Div para destacar conteúdo importante dentro do parallax, com a classe "hero-03" -->
                     <h4>Embu das Artes - Salão de Beleza</h4>
+                    <!-- Subtítulo do salão de beleza -->
                     <h1>Nosso Espaço</h1>
+                    <!-- Título principal destacando o espaço -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste sapiente, officia ut,
                         natus quasi nihil debitis dignissimos eligendi aspernatur rerum tempora quas, alias soluta cum
                         temporibus expedita sint. Nobis.</p>
+                    <!-- Parágrafo com informações sobre o espaço -->
                 </div>
                 <div class="btn-salao">
+                    <!-- Div para o botão de conhecer mais sobre o salão, com a classe "btn-salao" -->
                     <a href="#">
+                        <!-- Link para mais informações sobre o salão -->
                         <span></span><span></span>
                         <span></span><span></span>
                         Conheça Sobre o Salão
+                        <!-- Texto do botão -->
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Fim da seção "nossos-serviços" -->    
 
     <section class="hero-04">
-        <h1> Depoimentos</h1>
-        <h2> Nossas Clientes </h2>
+        <!-- Seção "hero-04" para destacar conteúdo importante, com a classe "hero-04" -->
+        <h1>Depoimentos</h1>
+        <!-- Título principal da seção, nível 1 -->
+        <h2>Nossas Clientes</h2>
+        <!-- Subtítulo da seção, nível 2 -->
     </section>
+    <!-- Fim da seção "hero-04" -->    
 
     <section class="fundo">
-    <section class="depoimentos mySwiper">
-        <div class="depoimentos-container swiper-wrapper">
-            <div class="slide-02 swiper-slide">
-                <i class="bi bi-quote"></i>
-                <p class="depoi txt">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
-                    voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
-                    fuga, non reprehenderit nam quis.
-                </p>
-                <div class="person">
-                    <img src="./CONTEUDO/SALÃO/mulher-01.jpeg" alt="">
-                    <div class="info-person">
-                        <p class="nome-person">Mulher 01</p>
-                        <p class="func-person">Cliente</p>
+        <!-- Seção "fundo" para fundo de seção específica, com a classe "fundo" -->
+        <section class="depoimentos mySwiper">
+            <!-- Seção para depoimentos com classe "depoimentos" e "mySwiper" para swiper -->
+            <div class="depoimentos-container swiper-wrapper">
+                <!-- Container de depoimentos com classe "depoimentos-container" e "swiper-wrapper" para swiper -->
+                <div class="slide-02 swiper-slide">
+                    <!-- Slide de depoimento com classe "slide-02" e "swiper-slide" para swiper -->
+                    <i class="bi bi-quote"></i>
+                    <!-- Ícone de citação -->
+                    <p class="depoi txt">
+                        <!-- Parágrafo com classe "depoi txt" para texto do depoimento -->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
+                        voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
+                        fuga, non reprehenderit nam quis.
+                    </p>
+                    <!-- Texto do depoimento -->
+                    <div class="person">
+                        <!-- Div para informações da pessoa -->
+                        <img src="./CONTEUDO/SALÃO/mulher-01.jpeg" alt="">
+                        <!-- Imagem da pessoa -->
+                        <div class="info-person">
+                            <!-- Div com informações pessoais -->
+                            <p class="nome-person">Mulher 01</p>
+                            <!-- Nome da pessoa -->
+                            <p class="func-person">Cliente</p>
+                            <!-- Função da pessoa (cliente) -->
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="slide-02 swiper-slide">
-                <i class="bi bi-quote"></i>
-                <p class="depoi txt">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
-                    voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
-                    fuga, non reprehenderit nam quis.
-                </p>
-                <div class="person">
-                    <img src="./CONTEUDO/SALÃO/mulher-02.jpeg" alt="">
-                    <div class="info-person">
-                        <p class="nome-person">Mulher 02</p>
-                        <p class="func-person">Cliente</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide-02 swiper-slide">
-                <i class="bi bi-quote"></i>
-                <p class="depoi txt">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
-                    voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
-                    fuga, non reprehenderit nam quis.
-                </p>
-                <div class="person">
-                    <img src="./CONTEUDO/SALÃO/mulher-03.jpeg" alt="">
-                    <div class="info-person">
-                        <p class="nome-person">Mulher 03</p>
-                        <p class="func-person">Cliente</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide-02 swiper-slide">
-                <i class="bi bi-quote"></i>
-                <p class="depoi txt">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
-                    voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
-                    fuga, non reprehenderit nam quis.
-                </p>
-                <div class="person">
-                    <img src="./CONTEUDO/SALÃO/mulher-04.jpeg" alt="">
-                    <div class="info-person">
-                        <p class="nome-person">Mulher 04</p>
-                        <p class="func-person">Cliente</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide-02 swiper-slide">
-                <i class="bi bi-quote"></i>
-                <p class="depoi txt">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
-                    voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
-                    fuga, non reprehenderit nam quis.
-                </p>
-                <div class="person">
-                    <img src="./CONTEUDO/SALÃO/mulher-05.jpeg" alt="">
-                    <div class="info-person">
-                        <p class="nome-person">Mulher 05</p>
-                        <p class="func-person">Cliente</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next seta"></div>
-        <div class="swiper-button-prev seta"></div>
-        <div class="swiper-pagination"></div>
-    </section>
-    </section>
+                <!-- Fim do primeiro slide de depoimento -->
     
-    <section class="hero-05">
-        <h1>Contatos</h1>
-        <h2>Contatos e Redes Sociais</h2>
+                <!-- Os próximos slides de depoimento seguem o mesmo padrão estrutural -->
+                <div class="slide-02 swiper-slide">
+                    <!-- Slide de depoimento -->
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi txt">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
+                        voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
+                        fuga, non reprehenderit nam quis.
+                    </p>
+                    <div class="person">
+                        <img src="./CONTEUDO/SALÃO/mulher-02.jpeg" alt="">
+                        <div class="info-person">
+                            <p class="nome-person">Mulher 02</p>
+                            <p class="func-person">Cliente</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="slide-02 swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi txt">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
+                        voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
+                        fuga, non reprehenderit nam quis.
+                    </p>
+                    <div class="person">
+                        <img src="./CONTEUDO/SALÃO/mulher-03.jpeg" alt="">
+                        <div class="info-person">
+                            <p class="nome-person">Mulher 03</p>
+                            <p class="func-person">Cliente</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 4 -->
+                <div class="slide-02 swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi txt">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
+                        voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
+                        fuga, non reprehenderit nam quis.
+                    </p>
+                    <div class="person">
+                        <img src="./CONTEUDO/SALÃO/mulher-04.jpeg" alt="">
+                        <div class="info-person">
+                            <p class="nome-person">Mulher 04</p>
+                            <p class="func-person">Cliente</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 5 -->
+                <div class="slide-02 swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi txt">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam officiis maxime cupiditate
+                        voluptas consequatur deserunt veniam sed hic similique rem repellat nesciunt officia dicta, alias
+                        fuga, non reprehenderit nam quis.
+                    </p>
+                    <div class="person">
+                        <img src="./CONTEUDO/SALÃO/mulher-05.jpeg" alt="">
+                        <div class="info-person">
+                            <p class="nome-person">Mulher 05</p>
+                            <p class="func-person">Cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do container de swiper -->
+    
+            <div class="swiper-button-next seta"></div>
+            <!-- Botão próximo do swiper -->
+            <div class="swiper-button-prev seta"></div>
+            <!-- Botão anterior do swiper -->
+            <div class="swiper-pagination"></div>
+            <!-- Paginação do swiper -->
+        </section>
+        <!-- Fim da seção "depoimentos" -->
     </section>
+    <!-- Fim da seção "fundo" -->    
+
+    <section class="hero-05">
+        <!-- Seção "hero-05" para destacar conteúdo importante, com a classe "hero-05" -->
+        <h1>Contatos</h1>
+        <!-- Título principal da seção, nível 1 -->
+        <h2>Contatos e Redes Sociais</h2>
+        <!-- Subtítulo da seção, nível 2 -->
+    </section>
+    <!-- Fim da seção "hero-05" -->    
 
     <section class="fundo-02">
-    <section class="info-contatos">
-        <div class="map-iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14616.1824239824!2d-46.80185928839532!3d-23.6743270022435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce531990d798cd%3A0xac3ed5caae45f5d5!2sCelso%20Foto%20Copiadora!5e0!3m2!1spt-BR!2sbr!4v1721063400324!5m2!1spt-BR!2sbr" width="350px" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="contatos">
-            <div class="info-02">
-            <h1>Informações de Contato</h1>
-            <p>Estamos localizadas no municipio de Embu das Artes, Jardim Santo Eduardo.</p>
+        <!-- Seção "fundo-02" para um fundo específico, com a classe "fundo-02" -->
+        <section class="info-contatos">
+            <!-- Subseção "info-contatos" para informações de contato -->
+            <div class="map-iframe">
+                <!-- Div para exibir um mapa incorporado -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14616.1824239824!2d-46.80185928839532!3d-23.6743270022435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce531990d798cd%3A0xac3ed5caae45f5d5!2sCelso%20Foto%20Copiadora!5e0!3m2!1spt-BR!2sbr!4v1721063400324!5m2!1spt-BR!2sbr"
+                    width="350px" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Mapa do Google incorporado com link e atributos de estilo -->
             </div>
-            <div class="info-03">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: #BB9696"><path d="M12 22s8.029-5.56 8-12c0-4.411-3.589-8-8-8S4 5.589 4 9.995C3.971 16.44 11.696 21.784 12 22zM8 9h3V6h2v3h3v2h-3v3h-2v-3H8V9z"></path></svg>
-            <p class="-info-04">Estr. de Itapecerica Campo Limpo, 3220 - loja 1 - Jardim Santo Eduardo, Embu das Artes - SP, 06823-300</p>
+    
+            <div class="contatos">
+                <!-- Div para informações de contato -->
+                <div class="info-02">
+                    <!-- Div com informações adicionais -->
+                    <h1>Informações de Contato</h1>
+                    <!-- Título para informações de contato -->
+                    <p>Estamos localizadas no município de Embu das Artes, Jardim Santo Eduardo.</p>
+                    <!-- Parágrafo com detalhes de localização -->
+                </div>
+                <div class="info-03">
+                    <!-- Div com informações adicionais -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                        style="fill: #BB9696">
+                        <path
+                            d="M12 22s8.029-5.56 8-12c0-4.411-3.589-8-8-8S4 5.589 4 9.995C3.971 16.44 11.696 21.784 12 22zM8 9h3V6h2v3h3v2h-3v3h-2v-3H8V9z">
+                        </path>
+                    </svg>
+                    <!-- Ícone de localização -->
+                    <p class="-info-04">Estr. de Itapecerica Campo Limpo, 3220 - loja 1 - Jardim Santo Eduardo, Embu das
+                        Artes - SP, 06823-300</p>
+                    <!-- Endereço completo -->
+                </div>
+                <div class="info-03">
+                    <!-- Div com informações adicionais -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        style="fill: #BB9696">
+                        <path
+                            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                        </path>
+                    </svg>
+                    <!-- Ícone de e-mail -->
+                    <p class="-info-04">info@espaçodasmanas.com</p>
+                    <!-- Endereço de e-mail -->
+                </div>
+                <div class="info-03">
+                    <!-- Div com informações adicionais -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        style="fill: #BB9696">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263">
+                        </path>
+                    </svg>
+                    <!-- Ícone de telefone -->
+                    <p class="-info-04">119925654</p>
+                    <!-- Número de telefone -->
+                </div>
+                <div class="info-03">
+                    <!-- Div com informações adicionais -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        style="fill: #BB9696">
+                        <path
+                            d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+                        </path>
+                        <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                    </svg>
+                    <!-- Ícone de Instagram -->
+                    <p class="-info-04">manasvaidosas</p>
+                    <!-- Nome de usuário do Instagram -->
+                </div>
             </div>
-            <div class="info-03">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #BB9696"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
-            <p class="-info-04">info@espaçodasmanas.com</p>
-            </div>
-            <div class="info-03">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #BB9696"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>
-            <p class="-info-04">119925654</p>
-            </div>
-            <div class="info-03">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #BB9696"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
-            <p class="-info-04">manasvaidosas</p>
-            </div>
-        </div>
+            <!-- Fim da div "contatos" -->
+        </section>
+        <!-- Fim da subseção "info-contatos" -->
     </section>
-    </section>
+    <!-- Fim da seção "fundo-02" -->    
 
     <section>
         <footer>
@@ -292,44 +504,47 @@
                 <!--Wave svg-->
                 <img class="img-wave" src="CONTEUDO/SALÃO/wave-rosa-removebg-preview.png" alt="">
                 <div class="fundo-mob">
-                <div class="img-wave2"></div>
-                <div class="container-04">
-                    <img class="logo-footer" src="CONTEUDO/MANAS/ICONE_LOGO_BRANCA-FUNDO_ROSA-removebg-preview.png" alt="">
-                    <div class="footer-section sobre-footer">
-                        <h2>Sobre Nós</h2>
-                        <p>Somos uma empresa dedicada a oferecer os melhores produtos e serviços para nossos clientes.</p>
+                    <div class="img-wave2"></div>
+                    <div class="container-04">
+                        <img class="logo-footer" src="CONTEUDO/MANAS/ICONE_LOGO_BRANCA-FUNDO_ROSA-removebg-preview.png"
+                            alt="">
+                        <div class="footer-section sobre-footer">
+                            <h2>Sobre Nós</h2>
+                            <p>Somos uma empresa dedicada a oferecer os melhores produtos e serviços para nossos
+                                clientes.</p>
+                        </div>
+
+                        <div class="footer-section info-footer">
+                            <h2>Informações</h2>
+                            <p> SEG-FECHADO</p>
+                            <p><a href="">TER-SEX....9H-20H</a></p>
+                            <p><a href="">SAB-DOM....8H-13H</a></p>
+
+                        </div>
+                        <div class="footer-section contatos-footer">
+                            <h2>Contato</h2>
+                            <p>Email: manasvaidosas123@gmail.com</p>
+                            <p>Telefone: (11) 97674-9575</p>
+                        </div>
+                        <div class="footer-section social-icons-footer">
+                            <h2>Redes Sociais</h2>
+                            <ul class="wrapper">
+                                <li class="icon facebook">
+                                    <span class="tooltip">Manasvaidosas</span>
+                                    <span><i class="fab fa-whatsapp"></i></span>
+                                </li>
+                                <li class="icon instagram">
+                                    <span class="tooltip">Manasvaidosas</span>
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="footer-section info-footer">
-                        <h2>Informações</h2>
-                        <p> SEG-FECHADO</p>
-                        <p><a href="">TER-SEX....9H-20H</a></p>
-                        <p><a href="">SAB-DOM....8H-13H</a></p>
-    
+                    <div class="copyrightF">
+                        <hr>
+                        <p class="copy">Copyright © - Espaço das Manas</p>
                     </div>
-                    <div class="footer-section contatos-footer">
-                        <h2>Contato</h2>
-                        <p>Email: manasvaidosas123@gmail.com</p>
-                        <p>Telefone: (11) 97674-9575</p>
-                    </div>
-                    <div class="footer-section social-icons-footer">
-                        <h2>Redes Sociais</h2>
-                        <ul class="wrapper">
-                            <li class="icon facebook">
-                              <span class="tooltip">Manasvaidosas</span>
-                              <span><i class="fab fa-whatsapp"></i></span>
-                            </li>
-                            <li class="icon instagram">
-                              <span class="tooltip">Manasvaidosas</span>
-                              <span><i class="fab fa-instagram"></i></span>
-                            </li>
-                          </ul>
-                    </div> 
                 </div>
-                <div class="copyrightF">
-                    <p class="copy">Copyright © - Espaço das Manas</p>
-                </div>
-                </div> 
         </footer>
     </section>
 
@@ -339,6 +554,7 @@
     <script src="JAVASCRIPT/header-responsivo.js"></script>
     <script src="JAVASCRIPT/swiper-bundle.min.js"></script>
     <script src="JAVASCRIPT/depoimentos.js"></script>
+    </main>
 </body>
 
 </html>

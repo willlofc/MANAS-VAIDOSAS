@@ -1,4 +1,4 @@
-/* Estilos do header */
+/* Estilos para o cabeçalho */
 .header {
     position: relative;
     width: 100%;
@@ -18,16 +18,17 @@
     width: 100%;
 }
 
+/* Estilos para o título do cabeçalho */
 .title {
     display: flex;
     align-items: center;
-    color: #E0A2A2;
-    font-family: 'Brownsugar-02';
+    color: #E0A2A2; /* Cor do texto */
+    font-family: 'Brownsugar-02'; /* Fonte do título */
 }
 
 .title h3 {
     margin: 0;
-    font-size: 34px;
+    font-size: 34px; /* Tamanho do texto */
 }
 
 .title img {
@@ -36,13 +37,14 @@
     margin-right: 10px;
 }
 
+/* Estilos para a navegação principal */
 #nav {
     display: flex;
     align-items: center;
 }
 
 .menu {
-    font-family: "Montserrat-02";
+    font-family: "Montserrat-02"; /* Fonte do menu */
     list-style: none;
     padding: 0;
     display: flex;
@@ -54,10 +56,10 @@
 }
 
 .menu li a {
-    color: #E0A2A2;
+    color: #E0A2A2; /* Cor do texto do link */
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.15em; /* Espaçamento entre letras */
     padding: 15px 20px;
     position: relative;
     display: inline-block;
@@ -71,31 +73,32 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #E0A2A2;
+    background: #E0A2A2; /* Cor do sublinhado */
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 
 .menu li a:hover:after {
-    width: 100%;
+    width: 100%; /* Animação do sublinhado */
     left: 0;
 }
 
-header .hamburguer, header .overlay
-{
+/* Estilos para o ícone do hamburguer e menu overlay em telas menores */
+.header .hamburguer,
+.header .overlay {
     display: none;
 }
 
-.closeButton
-{
+.closeButton {
     z-index: 15;
 }
 
 @media(max-width: 760px) {
+    /* Estilos para telas menores que 760px */
 
-    .title h3{
+    .title h3 {
         margin: 0;
-        font-size: 21px !important;
+        font-size: 21px !important; /* Tamanho do texto do título em telas menores */
     }
 
     .header .title {
@@ -103,25 +106,27 @@ header .hamburguer, header .overlay
     }
 
     .header .menu {
-        display: none;
+        display: none; /* Oculta o menu principal */
     }
 
     .header .hamburguer {
-        display: inline-block;
+        display: inline-block; /* Exibe o ícone do hamburguer */
         cursor: pointer;
         padding: 10px;
     }
 
-    .header .bar1, .header .bar2, .header .bar3 {
+    .header .bar1,
+    .header .bar2,
+    .header .bar3 {
         width: 25px;
         height: 3px;
-        background-color: #E0A2A2;
+        background-color: #E0A2A2; /* Cor das barras do ícone do hamburguer */
         margin: 5px 0;
-        transition: 0.4s;
+        transition: 0.4s; /* Transição de animação */
     }
 
     .header .overlay {
-        display: none;
+        display: none; /* Oculta o overlay */
         position: fixed;
         top: 0;
         left: 0;
@@ -133,7 +138,7 @@ header .hamburguer, header .overlay
     }
 
     .header .overlay.active {
-        display: block;
+        display: block; /* Exibe o overlay ativo */
     }
 
     .header .closeButton {
@@ -161,8 +166,8 @@ header .hamburguer, header .overlay
 
     .header .overlayButtons a {
         font-family: "Montserrat-02";
-        color: #E0A2A2;
-        font-size: 24px;
+        color: #E0A2A2; /* Cor do texto do menu overlay */
+        font-size: 24px; /* Tamanho da fonte do menu overlay */
         padding: 20px;
         text-align: center;
         text-decoration: none;

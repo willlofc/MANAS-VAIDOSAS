@@ -1,78 +1,80 @@
-.fundo-02{
-    background-color: #FFF0F5 !important;
-    flex: 1;
-    padding-top: 50px;
+/* Estilos para o fundo-02 */
+.fundo-02 {
+    background-color: #FFF0F5 !important; /* Cor de fundo */
+    flex: 1; /* Flexibilidade */
+    padding-top: 50px; /* Espaçamento superior */
 }
 
+/* Estilos para o hero-05 */
 .hero-05 {
-    text-align: center;
-    padding: 80px;
-    color: #BB6363;
+    text-align: center; /* Centralizar texto */
+    padding: 80px; /* Espaçamento interno */
+    color: #BB6363; /* Cor do texto */
 }
 
 .hero-05 h1 {
-    font-size: 50px;
-    font-family: "HearthStone-02";
+    font-size: 50px; /* Tamanho da fonte */
+    font-family: "HearthStone-02"; /* Fonte */
 }
 
-.hero-05 h2{
-    font-size: 20px;
-    font-family: "Montserrat-02";
+.hero-05 h2 {
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: "Montserrat-02"; /* Fonte */
 }
 
-.info-contatos{
-    display: flex;
-    margin-top: 30px;
-    width: 900px;
-    margin-top: 10px !important;
-    margin: auto;
+/* Estilos para a seção de informações de contato */
+.info-contatos {
+    display: flex; /* Layout flexível */
+    margin-top: 30px; /* Margem superior */
+    width: 900px; /* Largura máxima */
+    margin-top: 10px !important; /* Margem superior importante */
+    margin: auto; /* Margens automáticas */
 }
 
-.info-02 h1{
-    font-size: 40px;
-    font-family: "Playflair-02";
-    padding: 10px 20px 2px 20px;
-    color: #BB6363;
+.info-02 h1 {
+    font-size: 40px; /* Tamanho da fonte */
+    font-family: "Playflair-02"; /* Fonte */
+    padding: 10px 20px 2px 20px; /* Espaçamento interno */
+    color: #BB6363; /* Cor do texto */
 }
 
-.info-02 p, .info-03{
-    font-size: 15px;
-    font-family: "Montserrat-02";
-    padding: 0px 20px 20px 20px;
+.info-02 p,
+.info-03 {
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: "Montserrat-02"; /* Fonte */
+    padding: 0px 20px 20px 20px; /* Espaçamento interno */
 }
 
-.info-03{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    margin-bottom: 15px;
-    margin-left: 15px;
+.info-03 {
+    display: flex; /* Layout flexível */
+    gap: 5px; /* Espaço entre os itens */
+    align-items: center; /* Alinhamento vertical */
+    margin-bottom: 15px; /* Margem inferior */
+    margin-left: 15px; /* Margem esquerda */
 }
 
+/* Efeito de hover para info-03 */
 .info-03:hover svg {
-    transform: translateY(-5px); /* Ajuste o valor para a altura desejada */
-    transition: transform 0.3s ease; /* Ajuste o tempo de transição, se necessário */
+    transform: translateY(-5px); /* Translação ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave */
 }
 
 .info-03:hover p {
-    color: #BB9696;
-    transition: color 0.3s ease; /* Ajuste o tempo de transição, se necessário */
+    color: #BB9696; /* Cor do texto ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave */
 }
 
+/* Media query para telas menores que 768px */
 @media (max-width: 768px) {
     .info-contatos {
-        display: block;
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-        text-align: center;
+        display: block; /* Layout de bloco */
+        width: 100%; /* Largura total */
+        max-width: 350px; /* Largura máxima */
+        margin: 0 auto; /* Margens automáticas */
+        text-align: center; /* Centralizar texto */
     }
 
     .fundo-02 {
-        padding-bottom: 300px;
+        padding-bottom: 300px; /* Espaçamento inferior */
     }
 }
-
-
-
-

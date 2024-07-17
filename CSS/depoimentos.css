@@ -1,94 +1,107 @@
-.hero-04{
-    text-align: center;
-    padding: 10px 60px;
-    color: #BB6363;
+/* Estilos para hero-04 */
+.hero-04 {
+    text-align: center; /* Centralizar texto */
+    padding: 10px 60px; /* Espaçamento interno */
+    color: #BB6363; /* Cor do texto */
 }
 
-.hero-04 h1{
-    font-size: 60px;
-    font-family: "HearthStone-02";
+.hero-04 h1 {
+    font-size: 60px; /* Tamanho da fonte */
+    font-family: "HearthStone-02"; /* Fonte */
 }
 
-.hero-04 h2{
-    font-size: 20px;
-    font-family: "Montserrat-02";
+.hero-04 h2 {
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: "Montserrat-02"; /* Fonte */
 }
 
-.fundo{
-    padding: 50px;
-    background-color: #FFF0F5;
+/* Estilos para fundo */
+.fundo {
+    padding: 50px; /* Espaçamento interno */
+    background-color: #FFF0F5; /* Cor de fundo */
 }
 
-.depoimentos{
-    margin: 0 auto;
-    width: 100%;
-    padding: 10px 20px;
-    max-width: 900px;
-    position: relative;
-    overflow: hidden;
-    font-family: "Montserrat-02";
+/* Estilos para depoimentos */
+.depoimentos {
+    margin: 0 auto; /* Margens automáticas */
+    width: 100%; /* Largura total */
+    padding: 10px 20px; /* Espaçamento interno */
+    max-width: 900px; /* Largura máxima */
+    position: relative; /* Posição relativa */
+    overflow: hidden; /* Ocultar overflow */
+    font-family: "Montserrat-02"; /* Fonte */
 }
 
-.depoimentos  .slide-02{
-    padding: 40px 60px;
-    cursor: grab;
+.depoimentos .slide-02 {
+    padding: 40px 60px; /* Espaçamento interno */
+    cursor: grab; /* Cursor de agarre */
 }
 
-.depoimentos  .slide-02:active{
-    cursor: grabbing;
+.depoimentos .slide-02:active {
+    cursor: grabbing; /* Cursor de arrastar */
 }
 
-.depoimentos i{
-    font-size: 90px;
-    color: #dfdfdf;
+.depoimentos i {
+    font-size: 90px; /* Tamanho da fonte */
+    color: #dfdfdf; /* Cor do ícone */
 }
 
-.depoimentos p.depoi-txt{
-    font-weight: 300;
-    margin-bottom: 40px;
+.depoimentos p.depoi-txt {
+    font-weight: 300; /* Peso da fonte */
+    margin-bottom: 40px; /* Margem inferior */
 }
 
-.slide-02  .person{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.slide-02 .person {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 20px; /* Espaço entre os itens */
 }
 
-.slide-02  .person img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.slide-02 .person img {
+    width: 80px; /* Largura da imagem */
+    height: 80px; /* Altura da imagem */
+    border-radius: 50%; /* Borda circular */
 }
 
-.slide-02  .person p.nome-person{
-    font-size: 18px;
-    font-weight: 600;
+.slide-02 .person p.nome-person {
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
 }
 
-.slide-02  .person p.func-person{
-    font-size: 14px;
+.slide-02 .person p.func-person {
+    font-size: 14px; /* Tamanho da fonte */
 }
 
-.seta{
-    color: #BB6363 !important;
+/* Estilos para seta e paginação do swiper */
+.seta {
+    color: #BB6363 !important; /* Cor do ícone */
 }
 
-.swiper-pagination{
-    color: #BB6363 !important;
+.swiper-pagination {
+    color: #BB6363 !important; /* Cor da paginação */
 }
 
+/* Media query para telas menores que 768px */
 @media (max-width: 768px) {
-
-    .hero-04{
-        padding: 10px 40px;
+    .depoimentos .slide-02 {
+        padding: 0; /* Remover padding */
+        cursor: grab; /* Cursor de agarre */
     }
 
-    .hero-04 h1{
-        font-size: 40px;
-        margin-bottom: 10px;
+    .seta {
+        display: none !important; /* Ocultar seta */
     }
 
-    .hero-04 h2{
-        font-size: 20px;
+    .hero-04 {
+        padding: 10px 40px; /* Espaçamento interno */
+    }
+
+    .hero-04 h1 {
+        font-size: 40px; /* Tamanho da fonte */
+        margin-bottom: 10px; /* Margem inferior */
+    }
+
+    .hero-04 h2 {
+        font-size: 20px; /* Tamanho da fonte */
     }
 }
