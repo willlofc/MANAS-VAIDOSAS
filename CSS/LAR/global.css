@@ -1,0 +1,81 @@
+/* Importando os estilos CSS */
+@import url('header.css');
+@import url('footer.css');
+@import url('lar.css');
+
+/* Definindo fontes personalizadas */
+@font-face {
+    font-family: "BrownSugar-01";
+    src: url(../../CONTEUDO/FONTES/Brown\ Sugar\ .otf); /* Fonte Brown Sugar com extensão .otf */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BrownSugar-02";
+    src: url(../../CONTEUDO/FONTES/Brown\ Sugar\ .ttf); /* Fonte Brown Sugar com extensão .ttf */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-01";
+    src: url(../../CONTEUDO/FONTES/Montserrat-Italic-VariableFont_wght.ttf); /* Fonte Montserrat Italic com extensão .ttf */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-02";
+    src: url(../../CONTEUDO/FONTES/Montserrat-VariableFont_wght.ttf); /* Fonte Montserrat com extensão .ttf */
+}
+
+@font-face {
+    font-family: "Quentin";
+    src: url(../../CONTEUDO/FONTES/Quentin.otf); /* Fonte Quentin com extensão .otf */
+}
+
+@font-face {
+    font-family: "Playflair-01";
+    src: url(../../CONTEUDO/FONTES/PlayfairDisplay-Italic-VariableFont_wght.ttf); /* Fonte Playfair Display Italic com extensão .ttf */
+}
+
+@font-face {
+    font-family: "Playflair-02";
+    src: url(../../CONTEUDO/FONTES/PlayfairDisplay-VariableFont_wght.ttf); /* Fonte Playfair Display com extensão .ttf */
+}
+
+@font-face {
+    font-family: "HearthStone-01";
+    src: url(../../CONTEUDO/FONTES/Hearth\ Stone.otf); /* Fonte Hearth Stone com extensão .otf */
+}
+
+@font-face {
+    font-family: "HearthStone-02";
+    src: url(../../CONTEUDO/FONTES/Hearth\ Stone.ttf); /* Fonte Hearth Stone com extensão .ttf */
+}
+
+/* Estilos globais */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Box-sizing border-box para incluir padding e border na largura e altura */
+}
+
+html {
+    scroll-behavior: smooth; /* Scroll suave */
+}
+
+body {
+    background-color: var(--white); /* Cor de fundo definida por variável CSS */
+    font-size: var(--normal-font-size); /* Tamanho de fonte padrão definido por variável CSS */
+    font-family: var(--font-text); /* Família de fonte definida por variável CSS */
+    overflow-x: hidden; /* Oculta rolagem horizontal */
+}
+
+ul {
+    list-style: none; /* Remove marcadores de lista */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado de links */
+}
+
+

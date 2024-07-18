@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 e o idioma da página como Português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define a viewport para que a largura da página seja igual à largura da tela, ajustando-se para diferentes tamanhos de dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Otimiza a conexão para carregar fontes do Google Fonts mais rapidamente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Otimiza a conexão para carregar fontes do Google Fonts com suporte a CORS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa o arquivo CSS do Swiper, um componente de carrossel/slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Importa o arquivo CSS do Bootstrap Icons, uma biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Importa o arquivo CSS do Font Awesome, outra biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Incluindo o favicon -->
+    <link rel="icon" type="image/png" href="../CONTEUDO/MANAS/ICONE_LOGO_BRANCA-FUNDO_ROSA-removebg-preview.png">
+    <!-- Importa o arquivo CSS global da aplicação -->
+    <link rel="stylesheet" href="../CSS/LAR/global.css">
+    <!-- Define o título da página como "Manas Vaidosas" -->
+    <title>Manas Vaidosas</title>
+</head>
+
+
+<body>
+    <!-- Início do corpo do documento HTML -->
+    <main>
+        <!-- Elemento principal do documento -->
+        <header class="header">
+            <!-- Cabeçalho do documento com a classe "header" -->
+            <div class="container">
+                <!-- Div para conter os elementos do cabeçalho, com a classe "container" -->
+                <div class="title">
+                    <!-- Div para conter o título e o logo, com a classe "title" -->
+                    <img src="../CONTEUDO/MANAS/ICONE-LOGO ROSA-SEM FUNDO.png" width="80px" height="80px">
+                    <!-- Imagem do logo com largura e altura definidas -->
+                    <h3>ESPAÇO DAS MANAS</h3>
+                    <!-- Título do cabeçalho, nível 3 -->
+                </div>
+                <nav id="nav">
+                    <!-- Navegação principal com o ID "nav" -->
+                    <ul class="menu">
+                        <!-- Lista não ordenada com a classe "menu" -->
+                        <li><a href="../index.html">Home</a></li>
+                        <!-- Item de menu com link para "Home" -->
+                        <li><a href="sobre.html">Sobre nós</a></li>
+                        <!-- Item de menu com link para "Sobre nós" -->
+                        <li><a href="#">Lar</a></li>
+                        <!-- Item de menu com link para "Lar" -->
+                        <li><a href="#">Serviços</a></li>
+                        <!-- Item de menu com link para "Serviços" -->
+                    </ul>
+                </nav>
+                <!-- BOTÃO HAMBURGUER PARA O MOBILE -->
+                <div class="hamburguer" onclick="toggleMenu()">
+                    <!-- Div para o botão hamburguer, com a classe "hamburguer" e função de clique "toggleMenu()" -->
+                    <div class="bar1"></div>
+                    <!-- Barra 1 do botão hamburguer -->
+                    <div class="bar2"></div>
+                    <!-- Barra 2 do botão hamburguer -->
+                    <div class="bar3"></div>
+                    <!-- Barra 3 do botão hamburguer -->
+                </div>
+                <!-- Botões do menu hamburguer -->
+                <div class="overlay" id="overlay">
+                    <!-- Div para a sobreposição do menu hamburguer, com o ID "overlay" -->
+                    <div class="closeButton" id="hamburguer" onclick="fechar()">
+                        <!-- Div para o botão de fechar o menu hamburguer, com o ID "hamburguer" e função de clique "fechar()" -->
+                        <div class="bar1" id="bar1"></div>
+                        <!-- Barra 1 do botão de fechar -->
+                        <div class="bar3" id="bar3"></div>
+                        <!-- Barra 3 do botão de fechar -->
+                    </div>
+                    <div class="overlayButtons">
+                        <!-- Div para os botões dentro da sobreposição do menu hamburguer, com a classe "overlayButtons" -->
+                        <a href="../index.html">Home</a>
+                        <!-- Link para "Home" -->
+                        <a href="sobre.html">Sobre nós</a>
+                        <!-- Link para "Sobre nós" -->
+                        <a href="#">Lar</a>
+                        <!-- Link para "Lar" -->
+                        <a href="#">Serviços</a>
+                        <!-- Link para "Serviços" -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Fim do cabeçalho -->
+         
+        <section class="hero-08">
+            <!-- Título principal da seção com uma fonte cursiva grande -->
+            <h1 class="font-cursive-02">Nosso Espaço</h1>
+            <!-- Subtítulo da seção com uma fonte normal menor -->
+            <h2 class="font-normal-02">Galeria</h2>
+        </section>        
+
+        <section class="fundo-04">
+            <!-- Seção com a classe fundo-04 que aplica um fundo colorido e padding -->
+            <section class="hero-09">
+                <!-- Seção com a classe hero-09 que aplica um estilo específico ao texto dentro dela -->
+                <p>
+                    <!-- Parágrafo com uma descrição sobre o salão, destacando sua reputação, ambiente e equipe -->
+                    Com uma reputação consolidada, nosso salão é sinônimo de excelência e sofisticação no cuidado com a beleza feminina.
+                    Criamos um ambiente onde você pode relaxar e se sentir verdadeiramente especial. Nossa equipe dedicada está pronta para
+                    proporcionar a você uma experiência incomparável, com serviços personalizados que atendem a todas as suas necessidades.
+                    Venha nos visitar e descubra por que somos a escolha preferida das mulheres que desejam se sentir e parecer incríveis!
+                    Agende seu horário hoje mesmo e experimente o que há de melhor em beleza e cuidado.
+                </p>
+            </section>
+        </section>        
+
+        <section class="img-salao-section-01">
+            <!-- Seção com a classe img-salao-section-01, que organiza a exibição de uma imagem e um vídeo -->
+            <div class="img-salao-container-01">
+                <!-- Contêiner para a imagem e o vídeo, com a classe img-salao-container-01 para layout flexível -->
+                
+                <div class="img-salao-02 image">
+                    <!-- Div com a classe img-salao-02 e a classe adicional image, que contém a imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-12.jpg" alt="Descrição da imagem 4" class="img-salao-03 image">
+                    <!-- Imagem com src especificando o caminho do arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-03 -->
+                </div>
+                
+                <div class="img-salao-02 video">
+                    <!-- Div com a classe img-salao-02 e a classe adicional video, que contém o vídeo -->
+                    <video autoplay loop muted class="img-salao-02 video">
+                        <!-- Vídeo configurado para tocar automaticamente, em loop e sem som -->
+                        <source src="../CONTEUDO/SALÃO/video-salao-01.mp4" type="video/mp4">
+                        <!-- Fonte do vídeo com o caminho do arquivo e o tipo especificado -->
+                    </video>
+                </div>
+            </div>
+        </section>               
+        
+        <section class="img-salao-section">
+            <!-- Seção com a classe img-salao-section, que agrupa a exibição das imagens -->
+            <div class="img-salao-container">
+                <!-- Contêiner para as imagens com a classe img-salao-container -->
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a primeira imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-01.jpg" alt="Descrição da imagem 3" class="img-salao-01">
+                    <!-- Imagem com src especificando o caminho do arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 -->
+                </div>
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a segunda imagem -->
+                    <img src="../CONTEUDO/SALÃO/salão-02.jpg" alt="Descrição da imagem 4" class="img-salao-01">
+                    <!-- Imagem com src especificando o caminho do arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 -->
+                </div>
+                
+            </div>
+        </section>        
+
+        <section class="img-salao-section">
+            <!-- Seção com a classe img-salao-section, que agrupa a exibição das imagens -->
+            <div class="img-salao-container">
+                <!-- Contêiner para as imagens com a classe img-salao-container -->
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a primeira imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-03.jpg" alt="Descrição da imagem 5" class="img-salao-01">
+                    <!-- Imagem com src especificando o caminho do arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 -->
+                </div>
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a segunda imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-04.jpg" alt="Descrição da imagem 5" class="img-salao-01">
+                    <!-- Imagem com src especificando o caminho do arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 -->
+                </div>
+                
+            </div>
+        </section>        
+
+        <section class="img-salao-section">
+            <!-- Seção com a classe img-salao-section para agrupar as imagens -->
+            <div class="img-salao-container">
+                <!-- Contêiner com a classe img-salao-container que organiza as imagens -->
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a primeira imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-05.jpg" alt="Descrição da imagem 6" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a segunda imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-06.jpg" alt="Descrição da imagem 7" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+            </div>
+        </section>        
+
+        <section class="img-salao-section">
+            <!-- Seção com a classe img-salao-section para agrupar as imagens -->
+            <div class="img-salao-container">
+                <!-- Contêiner com a classe img-salao-container que organiza as imagens -->
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a primeira imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-07.jpg" alt="Descrição da imagem 8" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a segunda imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-08.jpg" alt="Descrição da imagem 9" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+            </div>
+        </section>        
+
+        <section class="img-salao-section">
+            <!-- Seção com a classe img-salao-section para agrupar as imagens -->
+            <div class="img-salao-container">
+                <!-- Contêiner com a classe img-salao-container que organiza as imagens -->
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a primeira imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-10.jpg" alt="Descrição da imagem 10" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a segunda imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-11.jpeg" alt="Descrição da imagem 11" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+            </div>
+        </section>        
+
+        <section class="img-salao-section">
+            <!-- Seção com a classe img-salao-section para agrupar as imagens -->
+            <div class="img-salao-container">
+                <!-- Contêiner com a classe img-salao-container que organiza as imagens -->
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a primeira imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-14.jpg" alt="Descrição da imagem 12" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+                <div class="img-salao">
+                    <!-- Div com a classe img-salao para a segunda imagem -->
+                    <img src="../CONTEUDO/SALÃO/salao-15.jpg" alt="Descrição da imagem 13" class="img-salao-01">
+                    <!-- Imagem com o src apontando para o arquivo, alt fornecendo uma descrição da imagem e a classe img-salao-01 para estilização -->
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="hero-10">
+            <h2>Venha Nos Conhecer!!</h2>
+        </section>
+
+        <section>
+            <footer>
+                <div class="wave-footer">
+                    <!-- Imagem do wave -->
+                    <img class="img-wave" src="../CONTEUDO/SALÃO/wave-rosa-removebg-preview.png" alt="">
+                    <div class="fundo-mob">
+                        <!-- Div com fundo para dispositivos móveis -->
+                        <div class="img-wave2"></div>
+                        <div class="container-04">
+                            <!-- Container principal -->
+                            <img class="logo-footer" src="../CONTEUDO/MANAS/ICONE_LOGO_BRANCA-FUNDO_ROSA-removebg-preview.png"
+                                alt="">
+                            <!-- Logo do footer -->
+                            <div class="footer-section sobre-footer">
+                                <!-- Seção "Sobre Nós" -->
+                                <h2>Sobre Nós</h2>
+                                <p>Somos uma empresa dedicada a oferecer os melhores produtos e serviços para nossos clientes.</p>
+                            </div>
+                            <div class="footer-section info-footer">
+                                <!-- Seção de informações -->
+                                <h2>Informações</h2>
+                                <p> SEG-FECHADO</p>
+                                <p><a href="">TER-SEX....9H-20H</a></p>
+                                <p><a href="">SAB-DOM....8H-13H</a></p>
+                            </div>
+                            <div class="footer-section contatos-footer">
+                                <!-- Seção de contatos -->
+                                <h2>Contato</h2>
+                                <p>Email: manasvaidosas123@gmail.com</p>
+                                <p>Telefone: (11) 97674-9575</p>
+                            </div>
+                            <div class="footer-section social-icons-footer">
+                                <!-- Seção de ícones sociais -->
+                                <h2>Redes Sociais</h2>
+                                <ul class="wrapper">
+                                    <li class="icon facebook">
+                                        <span class="tooltip">Manasvaidosas</span>
+                                        <span><i class="fab fa-whatsapp"></i></span>
+                                    </li>
+                                    <li class="icon instagram">
+                                        <span class="tooltip">Manasvaidosas</span>
+                                        <span><i class="fab fa-instagram"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="copyrightF">
+                            <!-- Direitos autorais -->
+                            <hr>
+                            <p class="copy">Copyright © - Espaço das Manas</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>        
+
+    </main>
+
+    <script src="../JAVASCRIPT/header-responsivo.js"></script>
+</body>
+
+</html>

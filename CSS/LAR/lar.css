@@ -1,0 +1,198 @@
+.hero-08 {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha texto ao centro */
+    padding-top: 70px; /* Espaçamento superior */
+    position: relative; /* Adicionado para centralização relativa dos elementos filhos */
+}
+
+.hero-09 p {
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    color: #000; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte do parágrafo */
+    font-family: "Montserrat-02"; /* Fonte do parágrafo */
+}
+
+.fundo-04{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #FFF0F5; /* Cor de fundo */
+}
+
+.font-cursive-02 {
+    font-size: 226px; /* Tamanho da fonte */
+    text-align: center; /* Alinha texto ao centro */
+    color: #f5b6b975; /* Cor do texto com transparência */
+    font-family: "Quentin"; /* Fonte personalizada */
+}
+
+.font-normal-02 {
+    font-size: 80px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #BB6363; /* Cor do texto */
+    font-family: "Montserrat-02"; /* Fonte personalizada */
+    position: absolute; /* Posicionamento absoluto */
+    top: 65%; /* Alinha no topo */
+    left: 50%; /* Alinha na esquerda */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.img-salao-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Espaçamento superior */
+    text-align: center;
+}
+
+.img-salao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Limita a largura máxima do contêiner */
+}
+
+.img-salao {
+    margin: 10px 0;
+}
+
+.img-salao-01 {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-salao-section-01 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Espaçamento superior */
+    text-align: center;
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+}
+
+.img-salao-container-01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Ajuste conforme necessário */
+    max-width: 1050px; /* Ajuste para corresponder à largura máxima das outras seções */
+    flex-direction: row; /* Garante que a imagem e o vídeo fiquem lado a lado */
+}
+
+.img-salao-02 {
+    margin: 10px;
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível do contêiner */
+    max-width: 600px; /* Ajuste para corresponder à largura máxima das imagens e vídeos */
+    height: auto; /* Mantém a proporção da altura */
+    object-fit: cover; /* Garante que o conteúdo se ajuste bem dentro da caixa */
+    flex: 1;
+}
+
+.img-salao-03 {
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível do contêiner */
+    max-width: 600px; /* Ajuste para corresponder à largura máxima das imagens e vídeos */
+    height: 900px; /* Mantém a proporção da altura */
+    object-fit: cover; /* Garante que o conteúdo se ajuste bem dentro da caixa */
+}
+
+.hero-10 h2{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "HearthStone-02";
+    font-size: 60px;
+    color: #BB6363;
+    margin-top: 25px;
+}
+
+@media (max-width: 1000px) {
+
+    .img-salao-container-01 {
+        width: 80%; /* Ajuste conforme necessário */
+    }
+
+    .img-salao-02{
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .img-salao-02, .img-salao-03 {
+        max-width: 500px; /* Ajuste conforme necessário */
+        height: auto;
+    }
+
+    .font-cursive-02 {
+        font-size: 150px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .font-normal-02 {
+        font-size: 50px; /* Tamanho da fonte ajustado para telas menores */
+    }
+}
+
+@media (min-width: 768px) {
+
+    .img-salao-container {
+        flex-direction: row;
+        max-width: 80%; /* Limita a largura máxima do contêiner */
+    }
+
+    .img-salao {
+        margin: 0 20px;
+    }
+
+    .imag-salao-01 {
+        max-width: 45%; /* Limita a largura máxima das imagens a 45% */
+    }
+}
+
+@media (max-width: 760px){
+
+    .img-salao-container-01 {
+        width: 90%; /* Ajuste conforme necessário */
+        flex-direction: column; /* Faz com que o vídeo fique acima da imagem */
+    }
+
+    .img-salao-02, .img-salao-03 {
+        max-width: 400px; /* Ajuste conforme necessário */
+        height: auto;
+        margin: 0;
+    }
+
+    .font-cursive-02 {
+        font-size: 80px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .font-normal-02 {
+        font-size: 30px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .video{
+        order: 1;
+    }
+
+    .image{
+        order: 2;
+    }
+
+    .img-salao-section{
+        margin-top: 5px;
+    }
+
+    .img-salao-container{
+        margin: 5px;
+    }
+
+    .hero-10 h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .font-cursive-02 {
+        font-size: 60px; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .font-normal-02 {
+        font-size: 30px; /* Tamanho da fonte ajustado para telas menores */
+    }
+}
